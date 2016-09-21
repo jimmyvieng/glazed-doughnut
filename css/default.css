@@ -1,0 +1,23 @@
+body{
+	font-family: 'Arimo', sans-serif;
+	}
+.logo{
+	background: url(../img/logo-villlamor.png)	0 0 no-repeat;
+  background-size: 100%;
+  width: 320px;
+  height: 397px;
+  margin: 5em auto 0;
+  text-indent: -99999em;  
+  }
+p{
+	width: 320px;
+	margin: 0.6em auto 0;
+	text-align: center;
+	font-size: 1.5em;
+}
+@media screen and (max-width: 768px) {
+  .logo{
+    width: 180px;
+    height:227px;    
+    }
+}
