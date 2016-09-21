@@ -1,0 +1,792 @@
+body {
+    background: url('../images/bg-subtle-circles.jpg');
+    background-repeat: repeat;
+}
+
+/* ====================================================================================================================
+        Home Slider    ==================================================================================================================== */
+
+.banner { 
+    position: relative; 
+    width: 100%;
+    text-align: center;
+    height: 100% !important;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    li {
+        list-style: none;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        li { 
+            float: left; 
+            width: 100%;
+            background-color: $primary-color;
+            box-shadow: inset 0 13px 6px rgba(45,41,71,.2);
+            display: block;
+            overflow: hidden;
+            position:relative;
+            max-width: 2000px;
+            .wide-container {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 1400px;
+                .slide-container {
+                    z-index: 1;
+                    padding: 1em 1% 0.5em 1%;
+                    background: rgba(45,41,71,0.2);
+                    position: absolute;
+                    margin-bottom: 0;
+                    bottom: 0 !important;
+                    // width: 60vw;
+                    float: left;
+                    h2, p {
+                        text-shadow: 0 0 5px $dark-purple;
+                    }
+                    .button {
+                        border-color: #fff;
+                        color: #fff;
+                        background: rgba(255,255,255,0.2);
+                        &:hover {
+                            border-color: $dark-purple;
+                            color: $dark-purple;
+                            background: rgba(255,255,255,0.8);
+                        }
+                    }
+                }
+            }
+            img {
+                z-index: 0;
+                &.slider-img {
+                    display:block;
+                    top: 0;
+					height: auto;
+                    width: 100%;
+                }
+            }
+            h2, p {
+                color: #fff;
+            }
+        }
+    }
+    .dots {
+        position: absolute;
+        /*left: 0;*/
+        right: 5%;
+        bottom: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 4px;
+            text-indent: -999em;
+            border: 2px solid #fff;
+            cursor: pointer;
+            opacity: 0.4;
+            -webkit-transition: background .5s, opacity .5s;
+            -moz-transition: background .5s, opacity .5s;
+            transition: background .5s, opacity .5s;
+            &.active {
+                background: #fff;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+/* ====================================================================================================================
+        Testimonials - Rotating Slider    ==================================================================================================================== */
+.reviews-container {
+    border-top: solid 1px #ccc;
+}
+
+.review-icon-holder {
+    padding-top: 1.5em;
+    width: 60%;
+    float: left;
+    height: 152px;
+    img {
+       height: 152px !important;
+        width: 223px !important; 
+    }
+}
+
+img.review-icon {
+    height: 152px !important;
+    width: 223px;
+}
+
+.review-links {
+    float: right;
+    width: 38%;
+    padding-top: 2.5em;
+    ul {
+        padding: 0;
+        -webkit-padding-start: 0;
+        li {
+            display: block;
+            padding: 0.3em 0;
+        }
+    }
+}
+
+.kudzu-badge img {
+	height: auto;
+	width: 70px;
+}
+
+.bo-smyrna-vining img {
+	height: auto;
+	width: 130px;
+}
+
+.fadein {
+    position: relative;
+    width:100%;
+    min-height: 12em;
+    overflow: hidden;
+    top:0;
+    left:0;
+    p {
+        display: block;
+        position: absolute;
+        top: 1em;
+        height: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        &.testimonial {
+			font-size: 1.2em;
+			line-height: 1.5em;
+            font-style: italic;
+            &:before {
+                content: open-quote;
+            }
+            &:after {
+                content: close-quote;
+            }
+            padding-bottom: 2em;
+        }
+    }
+}
+
+
+
+    	/* ====================================================================================================================
+        Parallax    ==================================================================================================================== */
+section {
+    &:before {
+        height: 180px;
+        margin-top: -180px;
+        visibility: hidden;
+        display: block;
+        position: relative;
+    }
+    &.module {
+        padding-bottom: 1.5em;
+        padding-top: 3em;
+        &.content {
+            overflow: auto;              
+            &.swirl {
+                background: url('../images/swirl-pattern-background.svg');
+                background-repeat: repeat;
+            }
+            &.purple {
+                background: $dark-purple;
+                color: #fff;
+            }
+        }
+        &.parallax {
+            height: 250px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            display: block;
+            position: relative;
+            overflow: auto;
+            max-width: 2000px;
+            margin-left: auto;
+            margin-right: auto;
+            .bgwidth {
+                width: 100%;
+            }
+            .bgheight {
+                height: 100%;
+            }
+            img.overlay-left {
+                bottom: 0;
+                left: 0;
+                height: 100%;
+                width: auto;
+                position: absolute;
+            }
+        }
+        &.top {
+            height: 450px;
+            background-position: center;
+            .wide-container {
+                width: 100%;
+                max-width: 1500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .page-top-container {
+                z-index: 1;
+                padding: 1em 2% 0.5em 2%;
+                background: rgba(45,41,71,0.2);
+                position: absolute;
+                margin-bottom: 0;
+                bottom: 0;
+                // min-width: 50%;
+                h1, p {
+                    text-shadow: 0 0 5px $dark-purple;
+                    color: #fff;
+                    margin: .2em 0;
+                    text-align:center;
+                    
+                }
+            }
+        }
+        
+        &.parallax-1 {
+            background-image: url("../images/inside/parallax/cat-upside-down-face.jpg");
+            background-position: center;
+        }
+        &.parallax-2 {
+            background-image: url("../images/inside/parallax/kitten-leaping-outside.jpg");
+            background-position: center -150px;
+        }
+        &.parallax-3 {
+            background-image: url("../images/inside/parallax/cat-under-sofa-peeking-out.jpg");
+            background-position: center;
+        }
+        &.parallax-4 {
+            background-image: url("../images/inside/parallax/cat-carpet-toy.jpg");
+            background-position: center;
+        }
+        &.parallax-5 {
+            background-image: url("../images/inside/parallax/kitten-walking.jpg");
+            background-position: center;
+        }
+        &.parallax-6 {
+            background-image: url("../images/inside/parallax/girl-kissing-kittent.jpg");
+            background-position: center;
+        }
+        &.parallax-7 {
+            background-image: url("../images/inside/parallax/meerkat.jpg");
+            background-position: center;
+        }
+        &.parallax-8 {
+            background-image: url("../images/inside/parallax/petted-cat.jpg");
+            background-position: center;
+        }
+        &.parallax-9 {
+            background-image: url("../images/inside/parallax/cat-bet.jpg");
+            background-position: center;
+        }  
+        &.parallax-10 {
+            background-image: url("../images/inside/parallax/calico-cat.jpg");
+            background-position: center;
+        }
+
+        &.parallax-11 {
+            background-image: url("../images/inside/parallax/ameliapanolobby.jpg");
+            background-position: center;
+        }
+        &.parallax-12 {
+            background-image: url("../images/inside/parallax/cat-looking-up.jpg");
+            background-position: center;
+        }
+        &.parallax-13 {
+            background-image: url("../images/inside/parallax/cat-stretch.jpg");
+            background-position: center;
+        }
+        &.parallax-14 {
+            background-image: url("../images/inside/parallax/spa-cat.jpg");
+            background-position: center;
+        }
+    }
+}
+
+.clearfix {
+    clear: both;
+    display: block;
+}
+
+.staff-img, .left-img {
+    margin-top: 1em;
+}
+
+.blog-promo {
+    background: $primary-color;
+    -webkit-box-shadow:inset 0 0 30px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow:inset 0 0 30px 0 rgba(0,0,0,0.5);
+    box-shadow:inset 0 0 30px 0 rgba(0,0,0,0.5);
+    position: relative;
+    overflow: auto;
+    color: #fff;
+    min-height: 20em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    h2 {
+        color:#fff;
+    }
+}
+
+    	/* ====================================================================================================================
+        In-content image styles   ==================================================================================================================== */
+
+.img-right-content {
+    display: inline-block;
+    margin-left: 1.25em;
+    margin-bottom: 1em;
+    float: right;
+    max-width: 30%;
+    height: auto;
+    width: auto;
+}
+
+.img-left-content {
+    display: inline-block;
+    margin-right: 1.25em;
+    margin-bottom: 1em;
+    float: left;
+    max-width: 30%;
+    height: auto;
+    width: auto;
+}
+    	/* ====================================================================================================================
+        Grid   ==================================================================================================================== */
+
+.container {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    .grid_3 {
+        width: 23%
+    }
+    .grid_4 {
+        width: 31%;
+        margin-left: 1%;
+        margin-right: 1%
+    }
+    .grid_6 {
+        width: 46%;
+        margin-left: 2%;
+        margin-right: 2%
+    }
+    .grid_8 {
+        width: 64%;
+    }
+    .grid_9 {
+        width: 73%
+    }
+    .grid_12 {
+        width: 98%
+    }
+    .prefix_2 {
+        padding-left: 16%;
+    }
+    .prefix_3 {
+        padding-left: 25%
+    }
+    .prefix_4 {
+        padding-left: 33%
+    }
+    .prefix_6 {
+        padding-left: 50%
+    }
+    .prefix_8 {
+        padding-left: 66%;
+    }
+    .prefix_9 {
+        padding-left: 75%
+    }
+    .suffix_2 {
+        padding-right: 16%;
+    }
+    .suffix_3 {
+        padding-right: 25%
+    }
+    .suffix_4 {
+        padding-right: 33%
+    }
+    .suffix_6 {
+        padding-right: 50%
+    }
+    .suffix_9 {
+        padding-right: 75%
+    }
+    .push_2 {
+        left: 16%;
+    }
+    .push_3 {
+        left: 25%
+    }
+    .push_4 {
+        left: 33%
+    }
+    .push_6 {
+        left: 50%
+    }
+    .push_9 {
+        left: 75%
+    }
+    .pull_3 {
+        left: -25%
+    }
+    .pull_4 {
+        left: -33%
+    }
+    .pull_6 {
+        left: -50%
+    }
+    .pull_9 {
+        left: -75%
+    }
+}
+.grid_3,
+.grid_4,
+.grid_6,
+.grid_8,
+.grid_9,
+.grid_12 {
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%
+}
+.alpha {
+    margin-left: 0
+}
+.omega {
+    margin-right: 0
+}
+/* Clear Floated Elements */
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+.clearfix {
+    display: inline-block
+}
+* html .clearfix {
+    height: 1%
+}
+.clearfix {
+    display: block
+}
+.mobileonly {
+    display: none;
+}
+.nonmobile {
+    display: block;
+}
+
+// map 
+.map{
+  border:none;
+  height: 450px;
+  width:100%;
+}
+
+// column list 
+.list-floats{
+  float:left;
+  margin-bottom:0px;
+  margin-left:0;
+  margin-top:0;
+  width:30%;
+}
+
+.last-list{
+  margin-bottom:20px;
+}
+
+.subnav li.on{
+  background: rgba(255, 255, 255, 0.3);
+  color: #efe7d9;
+  }
+ 
+// services page links 
+.services-buttons-links{
+  list-style: none;
+  margin:0 auto;
+  padding:0;  
+  li a{
+    margin-left:0;
+    width:50%;
+    }
+}
+
+.staff-img{
+    width:100%;
+    max-width:170px;
+}
+
+// non secondary subtitle pages
+section.module.green h1.non-header-tag {
+  margin-bottom: 0.5em;
+}
+
+/*Reviews logos styles*/
+.reviewsites{
+  margin:0;
+  padding:0 0 0 0 !important;
+}
+.reviewsites li {
+  float: left;
+  height: 100px;  
+  margin:10px 0 0 0;
+  display: block;
+}
+.reviewsites li img{
+  height: auto;
+  width:200px;
+	&.reviews-kudzu {
+		width: 90px;
+		margin-top: 1.3em;
+		margin-right: 1.3em;
+	}
+}
+.list-break{
+  float:left;
+}
+
+#Staff h2{
+  margin:1em 0;
+}
+
+article .content{
+  background: #000 url("../images/bg-subtle-circles.jpg");
+}
+
+
+    	/* ====================================================================================================================
+        Responsive Breaks    ==================================================================================================================== */
+
+
+// media queries
+@media (max-width: 1024px) {
+  // home page image position
+  section.module.parallax-2{    
+    background-position-y: 0;
+  }
+}
+@media (max-width: 960px) {
+  // content images
+  .side-photo{
+    margin:0 ;
+    margin:2em 0;  
+    max-width:100%;
+    width:100%;
+  }
+
+  // services page
+  .services-buttons-links li a{  
+    width:100%;
+  }
+}
+
+@media (max-width: 479px) {
+  // column list
+  .list-floats{
+    width:100%;
+  }
+}
+
+@media (max-width: 1003px){
+  
+  .non-link {
+    padding: .5em .75em !important;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: $break-large) {
+    .mobileonly {
+        display: block;
+    }
+    .nonmobile {
+        display: none;
+    }
+    
+    .fadein {
+        height: 15em;
+        p {
+            width: 100%;
+            margin-left: auto;
+        }
+        
+    }
+    .banner { 
+    ul {
+        height: 100%;
+        li { 
+            .slide-container {
+                width: 100vw;
+            }
+        }
+    }
+    }
+    
+    section {
+    &.module {
+        padding-bottom: 1.5em;
+        padding-top: 1.5em;
+        &.parallax {
+            background-attachment: local;
+            background-position: 0 25%;
+            img.overlay-left {
+                bottom: 0;
+                left: 0;
+                height: 100%;
+                width: auto;
+                position: absolute;
+            }
+        }
+        &.top {
+            height: 450px;
+            .page-top-container {
+                z-index: 1;
+                padding: 1em 2% 0.5em 2%;
+                background: rgba(45,41,71,0.2);
+                position: absolute;
+                margin-bottom: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+    .dots {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: $break-medium) {
+    .container {
+        .grid_3, .grid_4, .grid_6, .grid_8, .grid_9, .grid_12, .prefix_3 {
+            display: inline;
+            float: left;
+            position: relative;
+            margin-left: 1%;
+            margin-right: 1%;
+            width: 98%;
+            padding: 0;
+        }
+        .push_3, .push_2 {
+            left: 0;
+        }
+    }
+    .staff-img {
+        width: 50%;
+    }
+    .left-img {
+        display: none;
+    }
+    
+    .banner ul li .wide-container .slide-container {
+        width: 100%;
+    }
+    
+    section.module {
+        padding-top: 1.5em;
+    }
+    section.module.top {
+        height: 300px;
+    }
+}
+
+@media (max-width: $break-small) {
+    .banner ul li .wide-container .slide-container {
+        height:100%;
+        h2 {
+            font-size: 1.2em;
+            line-height: 1em;
+            margin-top:5em;
+        }
+        p {
+            font-size: 0.95em;
+        }
+    }
+    
+    .img-right-content {
+        max-width: 100%;
+    }
+
+    .img-left-content {
+        max-width: 100%;
+    }
+    
+    section {
+        &.module {
+            &.parallax {
+                display: none;
+                &.top {
+                    display: block;
+                    background-image: none;
+                    background-color: $primary-color;
+                    height: auto;
+                    overflow: auto;
+                    position: relative;
+                    padding: 0;
+                    .page-top-container {
+                        background: rgba(45,41,71,0.2);
+                        position: relative;
+                        margin-bottom: 0;
+                        bottom: 0;
+                        min-width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xsmall) {
+    .banner ul li .wide-container .slide-container {
+        h2 {
+            font-size: 1em;
+            line-height: 1em;
+            margin: 0.25em;
+        }
+        p {
+            font-size: 0.75em;
+            margin: 0.25em;
+        }
+    }
+}

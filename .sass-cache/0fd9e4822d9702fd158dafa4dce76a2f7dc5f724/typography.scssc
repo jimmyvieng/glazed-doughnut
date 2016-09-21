@@ -1,0 +1,1642 @@
+3.4.21 (Selective Steve)
+38bccc70758d4eb0aaf29c9efe12c74d3a72be56
+o:Sass::Tree::RootNode:
+@linei:@template"Ø"/* ==========================================================================
+    Typography defaults
+========================================================================== */
+
+html {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+}
+img, svg, input, select, textarea, button, .button {
+    vertical-align: middle;
+}
+svg, img, iframe {
+    max-width: 100%;
+}
+.button, input[type=button], button, input[type=reset], input[type=submit]{
+  &:focus {
+      outline: none;
+  }
+}
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow: auto;
+}
+caption, th, td {
+    font-size: 1em;
+    text-align: left;
+    vertical-align: top;
+}
+header ul, nav ul, aside ul, footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header ul li, nav ul li, aside ul li, footer ul li {
+    list-style: none;
+}
+
+
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/
+
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=e37c8458-7a74-4084-86c3-9dec00cf0090");
+@font-face{
+font-family:"Museo Sans W01_100";
+src:url("../fonts/e14e9fd6-0631-4491-b873-211c7b6f926c.eot?#iefix");
+src:url("../fonts/e14e9fd6-0631-4491-b873-211c7b6f926c.eot?#iefix") format("eot"),url("../fonts/fd9d5b5d-71c1-4db0-bf20-cd7e3ce4d069.woff2") format("woff2"),url("../fonts/e976d680-12b6-411e-9f79-0ef9287f484d.woff") format("woff"),url("../fonts/81780024-f1ae-4135-a0ae-d0bab2c19986.ttf") format("truetype"),url("../fonts/98fa899e-fa41-4563-b67a-33d373ba60ee.svg#98fa899e-fa41-4563-b67a-33d373ba60ee") format("svg");
+}
+@font-face{
+font-family:"MuseoSansW01-100Italic";
+src:url("../fonts/b2f70e54-26ae-44c8-94e7-3a7590a95d50.eot?#iefix");
+src:url("../fonts/b2f70e54-26ae-44c8-94e7-3a7590a95d50.eot?#iefix") format("eot"),url("../fonts/57a6b494-1c77-4cb0-b042-4adca2c0bdb1.woff2") format("woff2"),url("../fonts/2ab97fdf-1e06-4c25-a5e1-b111273d580a.woff") format("woff"),url("../fonts/ba402481-70a4-42b6-a4d2-291fac0e1202.ttf") format("truetype"),url("../fonts/b2f3b1d9-1063-46e0-abcd-6b4cbbe44327.svg#b2f3b1d9-1063-46e0-abcd-6b4cbbe44327") format("svg");
+}
+@font-face{
+font-family:"Museo Sans W01_300";
+src:url("../fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix");
+src:url("../fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix") format("eot"),url("../fonts/1d3191cd-ae8c-45e2-bb04-11e96d8fa974.woff2") format("woff2"),url("../fonts/b252d464-65cb-4950-88f7-ac0a1bf79b75.woff") format("woff"),url("../fonts/b3d18117-6517-4d3f-afc1-774086ff5fc1.ttf") format("truetype"),url("../fonts/b9bed509-0816-43d8-b14b-7525a21f4bde.svg#b9bed509-0816-43d8-b14b-7525a21f4bde") format("svg");
+}
+@font-face{
+font-family:"MuseoSansW01-300Italic";
+src:url("../fonts/90e6d1d9-33c0-4c63-9491-85041f7d5fd3.eot?#iefix");
+src:url("../fonts/90e6d1d9-33c0-4c63-9491-85041f7d5fd3.eot?#iefix") format("eot"),url("../fonts/a0f222f7-39b4-41c9-a5c0-0b9b7e6b8f89.woff2") format("woff2"),url("../fonts/96766c08-0e19-43a8-b45d-e95c5b09785c.woff") format("woff"),url("../fonts/304f4215-6b57-433a-83f7-2d4c3aaf82e9.ttf") format("truetype"),url("../fonts/2acdd065-8f32-4b1d-a7c8-c59fa153ce86.svg#2acdd065-8f32-4b1d-a7c8-c59fa153ce86") format("svg");
+}
+@font-face{
+font-family:"Museo Sans W01_500";
+src:url("../fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix");
+src:url("../fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot"),url("../fonts/d9896899-f08c-4750-a874-a9e10d83c2cb.woff2") format("woff2"),url("../fonts/d42dd843-62b0-4623-8855-d5882512c3c9.woff") format("woff"),url("../fonts/6d532ccb-086c-4000-bab2-5d16862fcf01.ttf") format("truetype"),url("../fonts/f56b7407-f97b-4cb3-9ce6-4e13065eec93.svg#f56b7407-f97b-4cb3-9ce6-4e13065eec93") format("svg");
+}
+@font-face{
+font-family:"MuseoSansW01-500Italic";
+src:url("../fonts/afb0bae6-4f02-492e-82dd-c4c51e519279.eot?#iefix");
+src:url("../fonts/afb0bae6-4f02-492e-82dd-c4c51e519279.eot?#iefix") format("eot"),url("../fonts/b76ff444-27dd-4494-b96e-2f5157f347d5.woff2") format("woff2"),url("../fonts/136eb3cf-249c-40a3-bb62-49c1ad9ae6d8.woff") format("woff"),url("../fonts/70c24c76-d52f-4d55-be08-6085ad014f1b.ttf") format("truetype"),url("../fonts/ac37080b-1709-4b25-bda1-03c4a58e3ef5.svg#ac37080b-1709-4b25-bda1-03c4a58e3ef5") format("svg");
+}
+@font-face{
+font-family:"Museo Sans W01_700";
+src:url("../fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix");
+src:url("../fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot"),url("../fonts/e2d37f34-6bca-473c-b64d-93811f4dc046.woff2") format("woff2"),url("../fonts/eadbb595-a394-48fc-834f-8bf5da15cddf.woff") format("woff"),url("../fonts/9bcba093-b507-4b9b-9c83-303003d3815c.ttf") format("truetype"),url("../fonts/9a2af429-2624-4bd1-a676-8f0eed3e7e31.svg#9a2af429-2624-4bd1-a676-8f0eed3e7e31") format("svg");
+}
+@font-face{
+font-family:"MuseoSansW01-700Italic";
+src:url("../fonts/8507714a-41e5-4f02-9f2d-70e6dc6b30f7.eot?#iefix");
+src:url("../fonts/8507714a-41e5-4f02-9f2d-70e6dc6b30f7.eot?#iefix") format("eot"),url("../fonts/0db19ee1-b74a-4eb6-b48f-60c7047ea44b.woff2") format("woff2"),url("../fonts/9c98d320-d511-4d3d-9ba3-6516302dba95.woff") format("woff"),url("../fonts/b4b164e1-3b4c-42c1-8db5-ca02bfad125c.ttf") format("truetype"),url("../fonts/8673e9b2-7e5d-4749-8588-b7de69b662c2.svg#8673e9b2-7e5d-4749-8588-b7de69b662c2") format("svg");
+}
+@font-face{
+font-family:"Museo Sans W01_900";
+src:url("../fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix");
+src:url("../fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix") format("eot"),url("../fonts/009ca58d-46af-4651-a359-f0ae2301085b.woff2") format("woff2"),url("../fonts/3619b5f4-8df9-44f5-8c53-b7c236e9c74e.woff") format("woff"),url("../fonts/9b2d949a-4e1c-435c-8412-f377c80583ae.ttf") format("truetype"),url("../fonts/7a319e11-05eb-49ce-bdb7-f692766e6477.svg#7a319e11-05eb-49ce-bdb7-f692766e6477") format("svg");
+}
+@font-face{
+font-family:"MuseoSansW01-900Italic";
+src:url("../fonts/671bc72b-b38c-4bdd-8ec8-6cb9976a3596.eot?#iefix");
+src:url("../fonts/671bc72b-b38c-4bdd-8ec8-6cb9976a3596.eot?#iefix") format("eot"),url("../fonts/83ec39ba-ad2e-46a6-a1b1-f93f1457f7d4.woff2") format("woff2"),url("../fonts/39ac4994-8f69-4ff0-8acd-9f100664da8f.woff") format("woff"),url("../fonts/cffeecea-caad-4fed-835f-21cc1de30c4b.ttf") format("truetype"),url("../fonts/8413d65b-e2be-47e1-8aab-60276fde1dd3.svg#8413d65b-e2be-47e1-8aab-60276fde1dd3") format("svg");
+}
+@font-face{
+font-family:"TrumpMediaevalLTW01-Rom";
+src:url("../fonts/4ad21659-335d-4177-9907-558d662b77f0.eot?#iefix");
+src:url("../fonts/4ad21659-335d-4177-9907-558d662b77f0.eot?#iefix") format("eot"),url("../fonts/e39fa70e-3bd3-45fa-b699-b6ad272b3e2c.woff2") format("woff2"),url("../fonts/e92cd6ea-07dc-459d-b84e-dcc05059bb21.woff") format("woff"),url("../fonts/94599b29-b336-4aa3-8425-5ae3d2a8f079.ttf") format("truetype"),url("../fonts/e24b9514-86b3-4b5d-9a41-6ba0233b9e77.svg#e24b9514-86b3-4b5d-9a41-6ba0233b9e77") format("svg");
+}
+@font-face{
+font-family:"TrumpMediaevalLTW01-Ita";
+src:url("../fonts/7fa03727-61fc-49cf-b967-40ebc58b5680.eot?#iefix");
+src:url("../fonts/7fa03727-61fc-49cf-b967-40ebc58b5680.eot?#iefix") format("eot"),url("../fonts/9ca0b54f-f9f1-44a0-8a39-934a782207aa.woff2") format("woff2"),url("../fonts/bf5757fa-3a6b-4187-90ad-01ad9fdedc0b.woff") format("woff"),url("../fonts/4ff3a943-78ee-494f-950c-9b37295d87b2.ttf") format("truetype"),url("../fonts/0180b9c0-5412-4c35-a803-a060654ed872.svg#0180b9c0-5412-4c35-a803-a060654ed872") format("svg");
+}
+@font-face{
+font-family:"TrumpMediaevalLTW01-Bol_723567";
+src:url("../fonts/9b64b6a1-a151-4e53-a4cc-11c6d48be967.eot?#iefix");
+src:url("../fonts/9b64b6a1-a151-4e53-a4cc-11c6d48be967.eot?#iefix") format("eot"),url("../fonts/99768f78-ef1e-4213-8c63-de7de43cb993.woff2") format("woff2"),url("../fonts/65364393-ec62-4968-a594-86f5353709ef.woff") format("woff"),url("../fonts/7255ea89-2742-4c8c-9ebd-dad23ce9a25d.ttf") format("truetype"),url("../fonts/78a9c0b0-86f5-4457-a964-f467bdba2ec3.svg#78a9c0b0-86f5-4457-a964-f467bdba2ec3") format("svg");
+}
+@font-face{
+font-family:"TrumpMediaevalLTW01-Bol_723570";
+src:url("../fonts/5647549b-6879-465b-a137-0419ad366196.eot?#iefix");
+src:url("../fonts/5647549b-6879-465b-a137-0419ad366196.eot?#iefix") format("eot"),url("../fonts/32b3223d-60df-4541-9ec1-f2df4753d75d.woff2") format("woff2"),url("../fonts/f2e85198-c587-4ba1-94ed-8876de1f74ed.woff") format("woff"),url("../fonts/725eb361-8055-4608-a49c-7cf6e88dfb39.ttf") format("truetype"),url("../fonts/8880a5f5-0fa1-4a01-be77-9d68b6682fec.svg#8880a5f5-0fa1-4a01-be77-9d68b6682fec") format("svg");
+}
+:@options{ :@source_rangeo:Sass::Source::Range	:@start_poso:Sass::Source::Position:@offseti;i:@importero: Sass::Importers::Filesystem:@real_root"*/Applications/MAMP/htdocs/new-project:
+@root"*/Applications/MAMP/htdocs/new-project:@same_name_warningso:Set:
+@hash{ :
+@file"src/styles/typography.scss:@end_poso;;i;i:@has_childrenT:@children[o:Sass::Tree::CommentNode;i;@;	o;
+	;o;;i;i;@
+;@;o;;iS;i:@value["≥/* ==========================================================================
+    Typography defaults
+========================================================================== */:
+@type:normal;[ o:Sass::Tree::RuleNode;i
+:
+@tabsi ;@;	o;
+	;o;;i;i
+;@
+;@;o;;i;i
+:@parsed_ruleso:"Sass::Selector::CommaSequence;i
+:@members[o:Sass::Selector::Sequence;i
+;![o:#Sass::Selector::SimpleSequence;i
+:@sourceso;;{ :@subject0;![o:Sass::Selector::Element	;i
+:@namespace0:
+@name"	html:@filename0;	o;
+	;o;;i;i;0;0;o;;i
+;i;)0;)0:@selector_source_rangeo;
+	;@;@
+;@;o;;i;i
+;T:
+@rule["	html;[o:Sass::Tree::PropNode;i:@name_source_rangeo;
+	;o;;i
+;i;@
+;@;o;;i;i;i ;@;	o;
+	;@1;@
+;@;o;;i$;i;o:!Sass::Script::Tree::Variable;i;@;	o;
+	;o;;i;i;@
+;@;o;;i$;i:@underscored_name"base_font_size;("base-font-size;)@:@prop_syntax:new;(["font-size:@value_source_rangeo;
+	;o;;i;i;@
+;@;@4;[ o;,;i;-o;
+	;o;;i
+;i;@
+;@;o;;i;i;i ;@;	o;
+	;@B;@
+;@;o;;i(;i;o;.;i;@;	o;
+	;o;;i;i;@
+;@;o;;i(;i;/"base_line_height;("base-line-height;)@;0;1;(["line-height;2o;
+	;o;;i;i;@
+;@;@E;[ o;;i;i ;@;	o;
+	;o;;i;i;@
+;@;o;;i9;i;o; ;i;![o;";i;![o;#;i;$o;;{ ;%0;![o;&	;i;'0;("img;)0;	o;
+	;o;;i;i;0;0;o;;i	;i;)0o;";i;![o;#;i;$o;;{ ;%0;![o;&	;i;'0;("svg;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;";i;![o;#;i;$o;;{ ;%0;![o;&	;i;'0;("
+input;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;";i;![o;#;i;$o;;{ ;%0;![o;&	;i;'0;("select;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;";i;![o;#;i;$o;;{ ;%0;![o;&	;i;'0;("textarea;)0;	o;
+	;o;;i;i;0;0;o;;i';i;)0o;";i;![o;#;i;$o;;{ ;%0;![o;&	;i;'0;("button;)0;	o;
+	;o;;i);i;0;0;o;;i/;i;)0o;";i;![o;#;i;$o;;{ ;%0;![o:Sass::Selector::Class;i;("button;)0;	o;
+	;o;;i1;i;0;0;o;;i8;i;)0;)0;*o;
+	;@S;@
+;@;o;;i9;i;T;+["7img, svg, input, select, textarea, button, .button;[o;,;i;-o;
+	;o;;i
+;i;@
+;@;o;;i;i;i ;@;	o;
+	;@¶;@
+;@;o;;i ;i;o: Sass::Script::Tree::Literal;i;	o;
+	;o;;i;i;@
+;@;o;;i ;i;o: Sass::Script::Value::String	;@;"middle;:identifier:"@deprecated_interp_equivalent0;0;1;(["vertical-align;2o;
+	;o;;i;i;@
+;@;@©;[ o;;i;i ;@;	o;
+	;o;;i;i;@
+;@;o;;i;i;o; ;i;![o;";i;![o;#;i;$o;;{ ;%0;![o;&	;i;'0;("svg;)0;	o;
+	;o;;i;i;0;0;o;;i	;i;)0o;";i;![o;#;i;$o;;{ ;%0;![o;&	;i;'0;("img;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;";i;![o;#;i;$o;;{ ;%0;![o;&	;i;'0;("iframe;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0;)0;*o;
+	;@∑;@
+;@;o;;i;i;T;+["svg, img, iframe;[o;,;i;-o;
+	;o;;i
+;i;@
+;@;o;;i;i;i ;@;	o;
+	;@„;@
+;@;o;;i;i;o;4;i;	o;
+	;o;;i;i;@
+;@;o;;i;i;o;5	;@;"	100%;;6;70;0;1;(["max-width;2o;
+	;o;;i;i;@
+;@;@Ê;[ o;;i;i ;@;	o;
+	;o;;i;i;@
+;@;o;;iP;i;o; ;i;![
+o;";i;![o;#;i;$o;;{ ;%0;![o;3;i;("button;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;";i;![o;#;i;$o;;{ ;%0;![o;&	;i;'0;("
+input;)0o:Sass::Selector::Attribute;i:@flags0:@operator"=;"button;'0;("	type;)0;	o;
+	;o;;i;i;0;0;o;;i!;i;)0o;";i;![o;#;i;$o;;{ ;%0;![o;&	;i;'0;("button;)0;	o;
+	;o;;i#;i;0;0;o;;i);i;)0o;";i;![o;#;i;$o;;{ ;%0;![o;&	;i;'0;("
+input;)0o;8;i;90;:"=;"
+reset;'0;("	type;)0;	o;
+	;o;;i+;i;0;0;o;;i<;i;)0o;";i;![o;#;i;$o;;{ ;%0;![o;&	;i;'0;("
+input;)0o;8;i;90;:"=;"submit;'0;("	type;)0;	o;
+	;o;;i>;i;0;0;o;;iP;i;)0;)0;*o;
+	;@Ù;@
+;@;o;;iP;i;T;+["O.button, input[type=button], button, input[type=reset], input[type=submit];[o;;i;i ;@;	o;
+	;o;;i;i;@
+;@;o;;i;i;o; ;i;![o;";i;![o;#;i;$o;;{ ;%0;![o:Sass::Selector::Parent;i;)0:@suffix0o:Sass::Selector::Pseudo;i:@syntactic_type:
+class:@selector0;("
+focus;)0:	@arg0;	o;
+	;o;;i;i;0;0;o;;i;i;)0;)0;*o;
+	;@B;@
+;@;o;;i;i;T;+["&:focus;[o;,;i;-o;
+	;o;;i;i;@
+;@;o;;i;i;i ;@;	o;
+	;@Y;@
+;@;o;;i;i;o;4;i;	o;
+	;o;;i;i;@
+;@;o;;i;i;o;5	;@;"	none;;6;70;0;1;(["outline;2o;
+	;o;;i;i;@
+;@;@\;[ o;;i;i ;@;	o;
+	;o;;i;i;@
+;@;o;;i;i;o; ;i;![o;";i;![o;#;i;$o;;{ ;%0;![o;&	;i;'0;("fieldset;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0;)0;*o;
+	;@j;@
+;@;o;;i;i;T;+["fieldset;[o;,;i;-o;
+	;o;;i
+;i;@
+;@;o;;i;i;i ;@;	o;
+	;@Ä;@
+;@;o;;i;i;o;4;i;	o;
+	;o;;i;i;@
+;@;o;;i;i;o;5	;@;"0;;6;70;0;1;(["margin;2o;
+	;o;;i;i;@
+;@;@É;[ o;,;i;-o;
+	;o;;i
+;i;@
+;@;o;;i;i;i ;@;	o;
+	;@ë;@
+;@;o;;i;i;o;4;i;	o;
+	;o;;i;i;@
+;@;o;;i;i;o;5	;@;"0;;6;70;0;1;(["padding;2o;
+	;o;;i;i;@
+;@;@î;[ o;,;i;-o;
+	;o;;i
+;i;@
+;@;o;;i;i;i ;@;	o;
+	;@¢;@
+;@;o;;i;i;o;4;i;	o;
+	;o;;i;i;@
+;@;o;;i;i;o;5	;@;"	none;;6;70;0;1;(["border;2o;
+	;o;;i;i;@
+;@;@•;[ o;;i;i ;@;	o;
+	;o;;i;i;@
+;@;o;;i;i;o; ;i;![o;";i;![o;#;i;$o;;{ ;%0;![o;&	;i;'0;("
+table;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0;)0;*o;
+	;@≥;@
+;@;o;;i;i;T;+["
+table;[	o;,;i;-o;
+	;o;;i
+;i;@
+;@;o;;i;i;i ;@;	o;
+	;@…;@
+;@;o;;i;i;o;4;i;	o;
+	;o;;i;i;@
+;@;o;;i;i;o;5	;@;"	100%;;6;70;0;1;(["
+width;2o;
+	;o;;i;i;@
+;@;@Ã;[ o;,;i ;-o;
+	;o;;i
+;i ;@
+;@;o;;i;i ;i ;@;	o;
+	;@⁄;@
+;@;o;;i#;i ;o;4;i ;	o;
+	;o;;i;i ;@
+;@;o;;i#;i ;o;5	;@;"collapse;;6;70;0;1;(["border-collapse;2o;
+	;o;;i;i ;@
+;@;@›;[ o;,;i!;-o;
+	;o;;i
+;i!;@
+;@;o;;i;i!;i ;@;	o;
+	;@Î;@
+;@;o;;i;i!;o;4;i!;	o;
+	;o;;i;i!;@
+;@;o;;i;i!;o;5	;@;"0;;6;70;0;1;(["border-spacing;2o;
+	;o;;i;i!;@
+;@;@Ó;[ o;,;i";-o;
+	;o;;i
+;i";@
+;@;o;;i;i";i ;@;	o;
+	;@¸;@
+;@;o;;i;i";o;4;i";	o;
+	;o;;i;i";@
+;@;o;;i;i";o;5	;@;"	auto;;6;70;0;1;(["overflow;2o;
+	;o;;i;i";@
+;@;@ˇ;[ o;;i$;i ;@;	o;
+	;o;;i;i$;@
+;@;o;;i;i$;o; ;i$;![o;";i$;![o;#;i$;$o;;{ ;%0;![o;&	;i$;'0;("caption;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;";i$;![o;#;i$;$o;;{ ;%0;![o;&	;i$;'0;("th;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;";i$;![o;#;i$;$o;;{ ;%0;![o;&	;i$;'0;("td;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0;)0;*o;
+	;@;@
+;@;o;;i;i$;T;+["caption, th, td;[o;,;i%;-o;
+	;o;;i
+;i%;@
+;@;o;;i;i%;i ;@;	o;
+	;@9;@
+;@;o;;i;i%;o;4;i%;	o;
+	;o;;i;i%;@
+;@;o;;i;i%;o;5	;@;"1em;;6;70;0;1;(["font-size;2o;
+	;o;;i;i%;@
+;@;@<;[ o;,;i&;-o;
+	;o;;i
+;i&;@
+;@;o;;i;i&;i ;@;	o;
+	;@J;@
+;@;o;;i;i&;o;4;i&;	o;
+	;o;;i;i&;@
+;@;o;;i;i&;o;5	;@;"	left;;6;70;0;1;(["text-align;2o;
+	;o;;i;i&;@
+;@;@M;[ o;,;i';-o;
+	;o;;i
+;i';@
+;@;o;;i;i';i ;@;	o;
+	;@[;@
+;@;o;;i;i';o;4;i';	o;
+	;o;;i;i';@
+;@;o;;i;i';o;5	;@;"top;;6;70;0;1;(["vertical-align;2o;
+	;o;;i;i';@
+;@;@^;[ o;;i);i ;@;	o;
+	;o;;i;i);@
+;@;o;;i-;i);o; ;i);![	o;";i);![o;#;i);$o;;{ ;%0;![o;&	;i);'0;("header;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;#;i);$o;;{ ;%0;![o;&	;i);'0;("ul;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;";i);![o;#;i);$o;;{ ;%0;![o;&	;i);'0;("nav;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;#;i);$o;;{ ;%0;![o;&	;i);'0;("ul;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;";i);![o;#;i);$o;;{ ;%0;![o;&	;i);'0;("
+aside;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;#;i);$o;;{ ;%0;![o;&	;i);'0;("ul;)0;	o;
+	;o;;i;i;0;0;o;;i!;i;)0o;";i);![o;#;i);$o;;{ ;%0;![o;&	;i);'0;("footer;)0;	o;
+	;o;;i#;i;0;0;o;;i);i;)0o;#;i);$o;;{ ;%0;![o;&	;i);'0;("ul;)0;	o;
+	;o;;i*;i;0;0;o;;i,;i;)0;)0;*o;
+	;@l;@
+;@;o;;i-;i);T;+["+header ul, nav ul, aside ul, footer ul;[o;,;i*;-o;
+	;o;;i
+;i*;@
+;@;o;;i;i*;i ;@;	o;
+	;@«;@
+;@;o;;i;i*;o;4;i*;	o;
+	;o;;i;i*;@
+;@;o;;i;i*;o;5	;@;"0;;6;70;0;1;(["margin;2o;
+	;o;;i;i*;@
+;@;@ ;[ o;,;i+;-o;
+	;o;;i
+;i+;@
+;@;o;;i;i+;i ;@;	o;
+	;@ÿ;@
+;@;o;;i;i+;o;4;i+;	o;
+	;o;;i;i+;@
+;@;o;;i;i+;o;5	;@;"0;;6;70;0;1;(["padding;2o;
+	;o;;i;i+;@
+;@;@€;[ o;,;i,;-o;
+	;o;;i
+;i,;@
+;@;o;;i;i,;i ;@;	o;
+	;@È;@
+;@;o;;i;i,;o;4;i,;	o;
+	;o;;i;i,;@
+;@;o;;i;i,;o;5	;@;"	none;;6;70;0;1;(["list-style;2o;
+	;o;;i;i,;@
+;@;@Ï;[ o;;i.;i ;@;	o;
+	;o;;i;i.;@
+;@;o;;i9;i.;o; ;i.;![	o;";i.;![o;#;i.;$o;;{ ;%0;![o;&	;i.;'0;("header;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;#;i.;$o;;{ ;%0;![o;&	;i.;'0;("ul;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;#;i.;$o;;{ ;%0;![o;&	;i.;'0;("li;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;";i.;![o;#;i.;$o;;{ ;%0;![o;&	;i.;'0;("nav;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;#;i.;$o;;{ ;%0;![o;&	;i.;'0;("ul;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;#;i.;$o;;{ ;%0;![o;&	;i.;'0;("li;)0;	o;
+	;o;;i;i;0;0;o;;i;i;)0o;";i.;![o;#;i.;$o;;{ ;%0;![o;&	;i.;'0;("
+aside;)0;	o;
+	;o;;i;i;0;0;o;;i$;i;)0o;#;i.;$o;;{ ;%0;![o;&	;i.;'0;("ul;)0;	o;
+	;o;;i%;i;0;0;o;;i';i;)0o;#;i.;$o;;{ ;%0;![o;&	;i.;'0;("li;)0;	o;
+	;o;;i(;i;0;0;o;;i*;i;)0o;";i.;![o;#;i.;$o;;{ ;%0;![o;&	;i.;'0;("footer;)0;	o;
+	;o;;i,;i;0;0;o;;i2;i;)0o;#;i.;$o;;{ ;%0;![o;&	;i.;'0;("ul;)0;	o;
+	;o;;i3;i;0;0;o;;i5;i;)0o;#;i.;$o;;{ ;%0;![o;&	;i.;'0;("li;)0;	o;
+	;o;;i6;i;0;0;o;;i8;i;)0;)0;*o;
+	;@˙;@
+;@;o;;i9;i.;T;+["7header ul li, nav ul li, aside ul li, footer ul li;[o;,;i/;-o;
+	;o;;i
+;i/;@
+;@;o;;i;i/;i ;@;	o;
+	;@y;@
+;@;o;;i;i/;o;4;i/;	o;
+	;o;;i;i/;@
+;@;o;;i;i/;o;5	;@;"	none;;6;70;0;1;(["list-style;2o;
+	;o;;i;i/;@
+;@;@|;[ o;;i3;@;	o;
+	;o;;i;i3;@
+;@;o;;i;i8;["Z/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/;;;[ o:Sass::Tree::CssImportNode;i;:@query[ ;i ;@;	o;
+	;o;;i;i;;@
+;@;o;;im;i;;" :@supports_condition0;[ :	@urio: Sass::Script::Tree::Funcall;i;;{:importer@
+:filename@;	o;
+	;o;;i;i;;@
+;@;o;;im;i;:@splat0:@kwarg_splat0:
+@args[o;4	;i;;	o;
+	;o;;i;i;;@
+;@;o;;il;i;;o;5	;@ó;"]http://fast.fonts.net/t/1.css?apiType=css&projectid=e37c8458-7a74-4084-86c3-9dec00cf0090;:string;70;)@:@keywordso:Sass::Util::NormalizedMap:	@mapIC:OrderedHash{ :
+@keys[ :@key_strings{ ;("url;)@o:Sass::Tree::DirectiveNode;i<;i ;@;	o;
+	;o;;i;i<;@
+;@;o;;i;i@;["@font-face;T;[o;,;i=;-o;
+	;o;;i;i=;@
+;@;o;;i;i=;i ;@;	o;
+	;@∞;@
+;@;o;;i&;i=;o;4;i=;	o;
+	;o;;i;i=;@
+;@;o;;i&;i=;o;5	;@;""Museo Sans W01_100";;6;70;0;1;(["font-family;2o;
+	;o;;i;i=;@
+;@;@≥;[ o;,;i>;-o;
+	;o;;i;i>;@
+;@;o;;i	;i>;i ;@;	o;
+	;@¡;@
+;@;o;;iI;i>;o;F;i>;@;	o;
+	;o;;i
+;i>;@
+;@;o;;iI;i>;I0;J0;K[o;4	;i>;	o;
+	;o;;i;i>;@
+;@;o;;iH;i>;o;5	;@;"=../fonts/e14e9fd6-0631-4491-b873-211c7b6f926c.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@;0;1;(["src;2o;
+	;o;;i
+;i>;@
+;@;@ƒ;[ o;,;i?;-o;
+	;o;;i;i?;@
+;@;o;;i	;i?;i ;@;	o;
+	;@‹;@
+;@;o;;iû;i?;o:$Sass::Script::Tree::ListLiteral;i?;@;	o;
+	;o;;i
+;i?;@
+;@;o;;iû;i?:@separator:
+comma:@elements[
+o;T;i?;@;	o;
+	;o;;i
+;i?;@
+;@;o;;iW;i?;U:
+space;W[o;F;i?;@;	o;
+	;o;;i
+;i?;@
+;@;o;;iI;i?;I0;J0;K[o;4	;i?;	o;
+	;o;;i;i?;@
+;@;o;;iH;i?;o;5	;@;"=../fonts/e14e9fd6-0631-4491-b873-211c7b6f926c.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i?;@;	o;
+	;o;;iJ;i?;@
+;@;o;;iW;i?;I0;J0;K[o;4	;i?;	o;
+	;o;;iQ;i?;@
+;@;o;;iV;i?;o;5	;@;"eot;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i?;@;	o;
+	;o;;iX;i?;@
+;@;o;;iù;i?;U;X;W[o;F;i?;@;	o;
+	;o;;iX;i?;@
+;@;o;;iç;i?;I0;J0;K[o;4	;i?;	o;
+	;o;;i\;i?;@
+;@;o;;iå;i?;o;5	;@;"8../fonts/fd9d5b5d-71c1-4db0-bf20-cd7e3ce4d069.woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i?;@;	o;
+	;o;;ié;i?;@
+;@;o;;iù;i?;I0;J0;K[o;4	;i?;	o;
+	;o;;iï;i?;@
+;@;o;;iú;i?;o;5	;@;"
+woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i?;@;	o;
+	;o;;iû;i?;@
+;@;o;;iÊ;i?;U;X;W[o;F;i?;@;	o;
+	;o;;iû;i?;@
+;@;o;;i◊;i?;I0;J0;K[o;4	;i?;	o;
+	;o;;i¢;i?;@
+;@;o;;i÷;i?;o;5	;@;"7../fonts/e976d680-12b6-411e-9f79-0ef9287f484d.woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i?;@;	o;
+	;o;;iÿ;i?;@
+;@;o;;iÊ;i?;I0;J0;K[o;4	;i?;	o;
+	;o;;iﬂ;i?;@
+;@;o;;iÂ;i?;o;5	;@;"	woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i?;@;	o;
+	;o;;iÁ;i?;@
+;@;o;;i2;i?;U;X;W[o;F;i?;@;	o;
+	;o;;iÁ;i?;@
+;@;o;;i;i?;I0;J0;K[o;4	;i?;	o;
+	;o;;iÎ;i?;@
+;@;o;;i;i?;o;5	;@;"6../fonts/81780024-f1ae-4135-a0ae-d0bab2c19986.ttf;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i?;@;	o;
+	;o;;i ;i?;@
+;@;o;;i2;i?;I0;J0;K[o;4	;i?;	o;
+	;o;;i';i?;@
+;@;o;;i1;i?;o;5	;@;"truetype;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i?;@;	o;
+	;o;;i3;i?;@
+;@;@„;U;X;W[o;F;i?;@;	o;
+	;o;;i3;i?;@
+;@;o;;iê;i?;I0;J0;K[o;4	;i?;	o;
+	;o;;i7;i?;@
+;@;o;;iè;i?;o;5	;@;"[../fonts/98fa899e-fa41-4563-b67a-33d373ba60ee.svg#98fa899e-fa41-4563-b67a-33d373ba60ee;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i?;@;	o;
+	;o;;ië;i?;@
+;@;o;;iû;i?;I0;J0;K[o;4	;i?;	o;
+	;o;;iò;i?;@
+;@;o;;iù;i?;o;5	;@;"svg;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@;)@;0;1;(["src;2o;
+	;o;;i
+;i?;@
+;@;@ﬂ;[ o;S;iA;i ;@;	o;
+	;o;;i;iA;@
+;@;o;;i;iE;["@font-face;T;[o;,;iB;-o;
+	;o;;i;iB;@
+;@;o;;i;iB;i ;@;	o;
+	;@´;@
+;@;o;;i*;iB;o;4;iB;	o;
+	;o;;i;iB;@
+;@;o;;i*;iB;o;5	;@;""MuseoSansW01-100Italic";;6;70;0;1;(["font-family;2o;
+	;o;;i;iB;@
+;@;@Æ;[ o;,;iC;-o;
+	;o;;i;iC;@
+;@;o;;i	;iC;i ;@;	o;
+	;@º;@
+;@;o;;iI;iC;o;F;iC;@;	o;
+	;o;;i
+;iC;@
+;@;o;;iI;iC;I0;J0;K[o;4	;iC;	o;
+	;o;;i;iC;@
+;@;o;;iH;iC;o;5	;@;"=../fonts/b2f70e54-26ae-44c8-94e7-3a7590a95d50.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@;0;1;(["src;2o;
+	;o;;i
+;iC;@
+;@;@ø;[ o;,;iD;-o;
+	;o;;i;iD;@
+;@;o;;i	;iD;i ;@;	o;
+	;@◊;@
+;@;o;;iû;iD;o;T;iD;@;	o;
+	;o;;i
+;iD;@
+;@;o;;iû;iD;U;V;W[
+o;T;iD;@;	o;
+	;o;;i
+;iD;@
+;@;o;;iW;iD;U;X;W[o;F;iD;@;	o;
+	;o;;i
+;iD;@
+;@;o;;iI;iD;I0;J0;K[o;4	;iD;	o;
+	;o;;i;iD;@
+;@;o;;iH;iD;o;5	;@;"=../fonts/b2f70e54-26ae-44c8-94e7-3a7590a95d50.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iD;@;	o;
+	;o;;iJ;iD;@
+;@;o;;iW;iD;I0;J0;K[o;4	;iD;	o;
+	;o;;iQ;iD;@
+;@;o;;iV;iD;o;5	;@;"eot;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iD;@;	o;
+	;o;;iX;iD;@
+;@;o;;iù;iD;U;X;W[o;F;iD;@;	o;
+	;o;;iX;iD;@
+;@;o;;iç;iD;I0;J0;K[o;4	;iD;	o;
+	;o;;i\;iD;@
+;@;o;;iå;iD;o;5	;@;"8../fonts/57a6b494-1c77-4cb0-b042-4adca2c0bdb1.woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iD;@;	o;
+	;o;;ié;iD;@
+;@;o;;iù;iD;I0;J0;K[o;4	;iD;	o;
+	;o;;iï;iD;@
+;@;o;;iú;iD;o;5	;@;"
+woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iD;@;	o;
+	;o;;iû;iD;@
+;@;o;;iÊ;iD;U;X;W[o;F;iD;@;	o;
+	;o;;iû;iD;@
+;@;o;;i◊;iD;I0;J0;K[o;4	;iD;	o;
+	;o;;i¢;iD;@
+;@;o;;i÷;iD;o;5	;@;"7../fonts/2ab97fdf-1e06-4c25-a5e1-b111273d580a.woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iD;@;	o;
+	;o;;iÿ;iD;@
+;@;o;;iÊ;iD;I0;J0;K[o;4	;iD;	o;
+	;o;;iﬂ;iD;@
+;@;o;;iÂ;iD;o;5	;@;"	woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iD;@;	o;
+	;o;;iÁ;iD;@
+;@;o;;i2;iD;U;X;W[o;F;iD;@;	o;
+	;o;;iÁ;iD;@
+;@;o;;i;iD;I0;J0;K[o;4	;iD;	o;
+	;o;;iÎ;iD;@
+;@;o;;i;iD;o;5	;@;"6../fonts/ba402481-70a4-42b6-a4d2-291fac0e1202.ttf;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iD;@;	o;
+	;o;;i ;iD;@
+;@;o;;i2;iD;I0;J0;K[o;4	;iD;	o;
+	;o;;i';iD;@
+;@;o;;i1;iD;o;5	;@;"truetype;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iD;@;	o;
+	;o;;i3;iD;@
+;@;@ﬁ;U;X;W[o;F;iD;@;	o;
+	;o;;i3;iD;@
+;@;o;;iê;iD;I0;J0;K[o;4	;iD;	o;
+	;o;;i7;iD;@
+;@;o;;iè;iD;o;5	;@;"[../fonts/b2f3b1d9-1063-46e0-abcd-6b4cbbe44327.svg#b2f3b1d9-1063-46e0-abcd-6b4cbbe44327;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iD;@;	o;
+	;o;;ië;iD;@
+;@;o;;iû;iD;I0;J0;K[o;4	;iD;	o;
+	;o;;iò;iD;@
+;@;o;;iù;iD;o;5	;@;"svg;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@;)@;0;1;(["src;2o;
+	;o;;i
+;iD;@
+;@;@⁄;[ o;S;iF;i ;@;	o;
+	;o;;i;iF;@
+;@;o;;i;iJ;["@font-face;T;[o;,;iG;-o;
+	;o;;i;iG;@
+;@;o;;i;iG;i ;@;	o;
+	;@¶;@
+;@;o;;i&;iG;o;4;iG;	o;
+	;o;;i;iG;@
+;@;o;;i&;iG;o;5	;@;""Museo Sans W01_300";;6;70;0;1;(["font-family;2o;
+	;o;;i;iG;@
+;@;@©;[ o;,;iH;-o;
+	;o;;i;iH;@
+;@;o;;i	;iH;i ;@;	o;
+	;@∑;@
+;@;o;;iI;iH;o;F;iH;@;	o;
+	;o;;i
+;iH;@
+;@;o;;iI;iH;I0;J0;K[o;4	;iH;	o;
+	;o;;i;iH;@
+;@;o;;iH;iH;o;5	;@;"=../fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@;0;1;(["src;2o;
+	;o;;i
+;iH;@
+;@;@∫;[ o;,;iI;-o;
+	;o;;i;iI;@
+;@;o;;i	;iI;i ;@;	o;
+	;@“;@
+;@;o;;iû;iI;o;T;iI;@;	o;
+	;o;;i
+;iI;@
+;@;o;;iû;iI;U;V;W[
+o;T;iI;@;	o;
+	;o;;i
+;iI;@
+;@;o;;iW;iI;U;X;W[o;F;iI;@;	o;
+	;o;;i
+;iI;@
+;@;o;;iI;iI;I0;J0;K[o;4	;iI;	o;
+	;o;;i;iI;@
+;@;o;;iH;iI;o;5	;@;"=../fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iI;@;	o;
+	;o;;iJ;iI;@
+;@;o;;iW;iI;I0;J0;K[o;4	;iI;	o;
+	;o;;iQ;iI;@
+;@;o;;iV;iI;o;5	;@;"eot;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iI;@;	o;
+	;o;;iX;iI;@
+;@;o;;iù;iI;U;X;W[o;F;iI;@;	o;
+	;o;;iX;iI;@
+;@;o;;iç;iI;I0;J0;K[o;4	;iI;	o;
+	;o;;i\;iI;@
+;@;o;;iå;iI;o;5	;@;"8../fonts/1d3191cd-ae8c-45e2-bb04-11e96d8fa974.woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iI;@;	o;
+	;o;;ié;iI;@
+;@;o;;iù;iI;I0;J0;K[o;4	;iI;	o;
+	;o;;iï;iI;@
+;@;o;;iú;iI;o;5	;@;"
+woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iI;@;	o;
+	;o;;iû;iI;@
+;@;o;;iÊ;iI;U;X;W[o;F;iI;@;	o;
+	;o;;iû;iI;@
+;@;o;;i◊;iI;I0;J0;K[o;4	;iI;	o;
+	;o;;i¢;iI;@
+;@;o;;i÷;iI;o;5	;@;"7../fonts/b252d464-65cb-4950-88f7-ac0a1bf79b75.woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iI;@;	o;
+	;o;;iÿ;iI;@
+;@;o;;iÊ;iI;I0;J0;K[o;4	;iI;	o;
+	;o;;iﬂ;iI;@
+;@;o;;iÂ;iI;o;5	;@;"	woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iI;@;	o;
+	;o;;iÁ;iI;@
+;@;o;;i2;iI;U;X;W[o;F;iI;@;	o;
+	;o;;iÁ;iI;@
+;@;o;;i;iI;I0;J0;K[o;4	;iI;	o;
+	;o;;iÎ;iI;@
+;@;o;;i;iI;o;5	;@;"6../fonts/b3d18117-6517-4d3f-afc1-774086ff5fc1.ttf;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iI;@;	o;
+	;o;;i ;iI;@
+;@;o;;i2;iI;I0;J0;K[o;4	;iI;	o;
+	;o;;i';iI;@
+;@;o;;i1;iI;o;5	;@;"truetype;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iI;@;	o;
+	;o;;i3;iI;@
+;@;@Ÿ;U;X;W[o;F;iI;@;	o;
+	;o;;i3;iI;@
+;@;o;;iê;iI;I0;J0;K[o;4	;iI;	o;
+	;o;;i7;iI;@
+;@;o;;iè;iI;o;5	;@;"[../fonts/b9bed509-0816-43d8-b14b-7525a21f4bde.svg#b9bed509-0816-43d8-b14b-7525a21f4bde;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iI;@;	o;
+	;o;;ië;iI;@
+;@;o;;iû;iI;I0;J0;K[o;4	;iI;	o;
+	;o;;iò;iI;@
+;@;o;;iù;iI;o;5	;@;"svg;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@;)@;0;1;(["src;2o;
+	;o;;i
+;iI;@
+;@;@’;[ o;S;iK;i ;@;	o;
+	;o;;i;iK;@
+;@;o;;i;iO;["@font-face;T;[o;,;iL;-o;
+	;o;;i;iL;@
+;@;o;;i;iL;i ;@;	o;
+	;@°;@
+;@;o;;i*;iL;o;4;iL;	o;
+	;o;;i;iL;@
+;@;o;;i*;iL;o;5	;@;""MuseoSansW01-300Italic";;6;70;0;1;(["font-family;2o;
+	;o;;i;iL;@
+;@;@§;[ o;,;iM;-o;
+	;o;;i;iM;@
+;@;o;;i	;iM;i ;@;	o;
+	;@≤;@
+;@;o;;iI;iM;o;F;iM;@;	o;
+	;o;;i
+;iM;@
+;@;o;;iI;iM;I0;J0;K[o;4	;iM;	o;
+	;o;;i;iM;@
+;@;o;;iH;iM;o;5	;@;"=../fonts/90e6d1d9-33c0-4c63-9491-85041f7d5fd3.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@;0;1;(["src;2o;
+	;o;;i
+;iM;@
+;@;@µ;[ o;,;iN;-o;
+	;o;;i;iN;@
+;@;o;;i	;iN;i ;@;	o;
+	;@Õ;@
+;@;o;;iû;iN;o;T;iN;@;	o;
+	;o;;i
+;iN;@
+;@;o;;iû;iN;U;V;W[
+o;T;iN;@;	o;
+	;o;;i
+;iN;@
+;@;o;;iW;iN;U;X;W[o;F;iN;@;	o;
+	;o;;i
+;iN;@
+;@;o;;iI;iN;I0;J0;K[o;4	;iN;	o;
+	;o;;i;iN;@
+;@;o;;iH;iN;o;5	;@;"=../fonts/90e6d1d9-33c0-4c63-9491-85041f7d5fd3.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iN;@;	o;
+	;o;;iJ;iN;@
+;@;o;;iW;iN;I0;J0;K[o;4	;iN;	o;
+	;o;;iQ;iN;@
+;@;o;;iV;iN;o;5	;@;"eot;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iN;@;	o;
+	;o;;iX;iN;@
+;@;o;;iù;iN;U;X;W[o;F;iN;@;	o;
+	;o;;iX;iN;@
+;@;o;;iç;iN;I0;J0;K[o;4	;iN;	o;
+	;o;;i\;iN;@
+;@;o;;iå;iN;o;5	;@;"8../fonts/a0f222f7-39b4-41c9-a5c0-0b9b7e6b8f89.woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iN;@;	o;
+	;o;;ié;iN;@
+;@;o;;iù;iN;I0;J0;K[o;4	;iN;	o;
+	;o;;iï;iN;@
+;@;o;;iú;iN;o;5	;@;"
+woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iN;@;	o;
+	;o;;iû;iN;@
+;@;o;;iÊ;iN;U;X;W[o;F;iN;@;	o;
+	;o;;iû;iN;@
+;@;o;;i◊;iN;I0;J0;K[o;4	;iN;	o;
+	;o;;i¢;iN;@
+;@;o;;i÷;iN;o;5	;@;"7../fonts/96766c08-0e19-43a8-b45d-e95c5b09785c.woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iN;@;	o;
+	;o;;iÿ;iN;@
+;@;o;;iÊ;iN;I0;J0;K[o;4	;iN;	o;
+	;o;;iﬂ;iN;@
+;@;o;;iÂ;iN;o;5	;@;"	woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iN;@;	o;
+	;o;;iÁ;iN;@
+;@;o;;i2;iN;U;X;W[o;F;iN;@;	o;
+	;o;;iÁ;iN;@
+;@;o;;i;iN;I0;J0;K[o;4	;iN;	o;
+	;o;;iÎ;iN;@
+;@;o;;i;iN;o;5	;@;"6../fonts/304f4215-6b57-433a-83f7-2d4c3aaf82e9.ttf;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iN;@;	o;
+	;o;;i ;iN;@
+;@;o;;i2;iN;I0;J0;K[o;4	;iN;	o;
+	;o;;i';iN;@
+;@;o;;i1;iN;o;5	;@;"truetype;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iN;@;	o;
+	;o;;i3;iN;@
+;@;@‘;U;X;W[o;F;iN;@;	o;
+	;o;;i3;iN;@
+;@;o;;iê;iN;I0;J0;K[o;4	;iN;	o;
+	;o;;i7;iN;@
+;@;o;;iè;iN;o;5	;@;"[../fonts/2acdd065-8f32-4b1d-a7c8-c59fa153ce86.svg#2acdd065-8f32-4b1d-a7c8-c59fa153ce86;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iN;@;	o;
+	;o;;ië;iN;@
+;@;o;;iû;iN;I0;J0;K[o;4	;iN;	o;
+	;o;;iò;iN;@
+;@;o;;iù;iN;o;5	;@;"svg;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@;)@;0;1;(["src;2o;
+	;o;;i
+;iN;@
+;@;@–;[ o;S;iP;i ;@;	o;
+	;o;;i;iP;@
+;@;o;;i;iT;["@font-face;T;[o;,;iQ;-o;
+	;o;;i;iQ;@
+;@;o;;i;iQ;i ;@;	o;
+	;@ú;@
+;@;o;;i&;iQ;o;4;iQ;	o;
+	;o;;i;iQ;@
+;@;o;;i&;iQ;o;5	;@;""Museo Sans W01_500";;6;70;0;1;(["font-family;2o;
+	;o;;i;iQ;@
+;@;@ü;[ o;,;iR;-o;
+	;o;;i;iR;@
+;@;o;;i	;iR;i ;@;	o;
+	;@≠;@
+;@;o;;iI;iR;o;F;iR;@;	o;
+	;o;;i
+;iR;@
+;@;o;;iI;iR;I0;J0;K[o;4	;iR;	o;
+	;o;;i;iR;@
+;@;o;;iH;iR;o;5	;@;"=../fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@;0;1;(["src;2o;
+	;o;;i
+;iR;@
+;@;@∞;[ o;,;iS;-o;
+	;o;;i;iS;@
+;@;o;;i	;iS;i ;@;	o;
+	;@»;@
+;@;o;;iû;iS;o;T;iS;@;	o;
+	;o;;i
+;iS;@
+;@;o;;iû;iS;U;V;W[
+o;T;iS;@;	o;
+	;o;;i
+;iS;@
+;@;o;;iW;iS;U;X;W[o;F;iS;@;	o;
+	;o;;i
+;iS;@
+;@;o;;iI;iS;I0;J0;K[o;4	;iS;	o;
+	;o;;i;iS;@
+;@;o;;iH;iS;o;5	;@;"=../fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iS;@;	o;
+	;o;;iJ;iS;@
+;@;o;;iW;iS;I0;J0;K[o;4	;iS;	o;
+	;o;;iQ;iS;@
+;@;o;;iV;iS;o;5	;@;"eot;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iS;@;	o;
+	;o;;iX;iS;@
+;@;o;;iù;iS;U;X;W[o;F;iS;@;	o;
+	;o;;iX;iS;@
+;@;o;;iç;iS;I0;J0;K[o;4	;iS;	o;
+	;o;;i\;iS;@
+;@;o;;iå;iS;o;5	;@;"8../fonts/d9896899-f08c-4750-a874-a9e10d83c2cb.woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iS;@;	o;
+	;o;;ié;iS;@
+;@;o;;iù;iS;I0;J0;K[o;4	;iS;	o;
+	;o;;iï;iS;@
+;@;o;;iú;iS;o;5	;@;"
+woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iS;@;	o;
+	;o;;iû;iS;@
+;@;o;;iÊ;iS;U;X;W[o;F;iS;@;	o;
+	;o;;iû;iS;@
+;@;o;;i◊;iS;I0;J0;K[o;4	;iS;	o;
+	;o;;i¢;iS;@
+;@;o;;i÷;iS;o;5	;@;"7../fonts/d42dd843-62b0-4623-8855-d5882512c3c9.woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iS;@;	o;
+	;o;;iÿ;iS;@
+;@;o;;iÊ;iS;I0;J0;K[o;4	;iS;	o;
+	;o;;iﬂ;iS;@
+;@;o;;iÂ;iS;o;5	;@;"	woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iS;@;	o;
+	;o;;iÁ;iS;@
+;@;o;;i2;iS;U;X;W[o;F;iS;@;	o;
+	;o;;iÁ;iS;@
+;@;o;;i;iS;I0;J0;K[o;4	;iS;	o;
+	;o;;iÎ;iS;@
+;@;o;;i;iS;o;5	;@;"6../fonts/6d532ccb-086c-4000-bab2-5d16862fcf01.ttf;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iS;@;	o;
+	;o;;i ;iS;@
+;@;o;;i2;iS;I0;J0;K[o;4	;iS;	o;
+	;o;;i';iS;@
+;@;o;;i1;iS;o;5	;@;"truetype;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iS;@;	o;
+	;o;;i3;iS;@
+;@;@œ;U;X;W[o;F;iS;@;	o;
+	;o;;i3;iS;@
+;@;o;;iê;iS;I0;J0;K[o;4	;iS;	o;
+	;o;;i7;iS;@
+;@;o;;iè;iS;o;5	;@;"[../fonts/f56b7407-f97b-4cb3-9ce6-4e13065eec93.svg#f56b7407-f97b-4cb3-9ce6-4e13065eec93;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iS;@;	o;
+	;o;;ië;iS;@
+;@;o;;iû;iS;I0;J0;K[o;4	;iS;	o;
+	;o;;iò;iS;@
+;@;o;;iù;iS;o;5	;@;"svg;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@;)@;0;1;(["src;2o;
+	;o;;i
+;iS;@
+;@;@À;[ o;S;iU;i ;@;	o;
+	;o;;i;iU;@
+;@;o;;i;iY;["@font-face;T;[o;,;iV;-o;
+	;o;;i;iV;@
+;@;o;;i;iV;i ;@;	o;
+	;@ó;@
+;@;o;;i*;iV;o;4;iV;	o;
+	;o;;i;iV;@
+;@;o;;i*;iV;o;5	;@;""MuseoSansW01-500Italic";;6;70;0;1;(["font-family;2o;
+	;o;;i;iV;@
+;@;@ö;[ o;,;iW;-o;
+	;o;;i;iW;@
+;@;o;;i	;iW;i ;@;	o;
+	;@®;@
+;@;o;;iI;iW;o;F;iW;@;	o;
+	;o;;i
+;iW;@
+;@;o;;iI;iW;I0;J0;K[o;4	;iW;	o;
+	;o;;i;iW;@
+;@;o;;iH;iW;o;5	;@;"=../fonts/afb0bae6-4f02-492e-82dd-c4c51e519279.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@;0;1;(["src;2o;
+	;o;;i
+;iW;@
+;@;@´;[ o;,;iX;-o;
+	;o;;i;iX;@
+;@;o;;i	;iX;i ;@;	o;
+	;@√;@
+;@;o;;iû;iX;o;T;iX;@;	o;
+	;o;;i
+;iX;@
+;@;o;;iû;iX;U;V;W[
+o;T;iX;@;	o;
+	;o;;i
+;iX;@
+;@;o;;iW;iX;U;X;W[o;F;iX;@;	o;
+	;o;;i
+;iX;@
+;@;o;;iI;iX;I0;J0;K[o;4	;iX;	o;
+	;o;;i;iX;@
+;@;o;;iH;iX;o;5	;@;"=../fonts/afb0bae6-4f02-492e-82dd-c4c51e519279.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iX;@;	o;
+	;o;;iJ;iX;@
+;@;o;;iW;iX;I0;J0;K[o;4	;iX;	o;
+	;o;;iQ;iX;@
+;@;o;;iV;iX;o;5	;@;"eot;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iX;@;	o;
+	;o;;iX;iX;@
+;@;o;;iù;iX;U;X;W[o;F;iX;@;	o;
+	;o;;iX;iX;@
+;@;o;;iç;iX;I0;J0;K[o;4	;iX;	o;
+	;o;;i\;iX;@
+;@;o;;iå;iX;o;5	;@;"8../fonts/b76ff444-27dd-4494-b96e-2f5157f347d5.woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iX;@;	o;
+	;o;;ié;iX;@
+;@;o;;iù;iX;I0;J0;K[o;4	;iX;	o;
+	;o;;iï;iX;@
+;@;o;;iú;iX;o;5	;@;"
+woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iX;@;	o;
+	;o;;iû;iX;@
+;@;o;;iÊ;iX;U;X;W[o;F;iX;@;	o;
+	;o;;iû;iX;@
+;@;o;;i◊;iX;I0;J0;K[o;4	;iX;	o;
+	;o;;i¢;iX;@
+;@;o;;i÷;iX;o;5	;@;"7../fonts/136eb3cf-249c-40a3-bb62-49c1ad9ae6d8.woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iX;@;	o;
+	;o;;iÿ;iX;@
+;@;o;;iÊ;iX;I0;J0;K[o;4	;iX;	o;
+	;o;;iﬂ;iX;@
+;@;o;;iÂ;iX;o;5	;@;"	woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iX;@;	o;
+	;o;;iÁ;iX;@
+;@;o;;i2;iX;U;X;W[o;F;iX;@;	o;
+	;o;;iÁ;iX;@
+;@;o;;i;iX;I0;J0;K[o;4	;iX;	o;
+	;o;;iÎ;iX;@
+;@;o;;i;iX;o;5	;@;"6../fonts/70c24c76-d52f-4d55-be08-6085ad014f1b.ttf;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iX;@;	o;
+	;o;;i ;iX;@
+;@;o;;i2;iX;I0;J0;K[o;4	;iX;	o;
+	;o;;i';iX;@
+;@;o;;i1;iX;o;5	;@;"truetype;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iX;@;	o;
+	;o;;i3;iX;@
+;@;@ ;U;X;W[o;F;iX;@;	o;
+	;o;;i3;iX;@
+;@;o;;iê;iX;I0;J0;K[o;4	;iX;	o;
+	;o;;i7;iX;@
+;@;o;;iè;iX;o;5	;@;"[../fonts/ac37080b-1709-4b25-bda1-03c4a58e3ef5.svg#ac37080b-1709-4b25-bda1-03c4a58e3ef5;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iX;@;	o;
+	;o;;ië;iX;@
+;@;o;;iû;iX;I0;J0;K[o;4	;iX;	o;
+	;o;;iò;iX;@
+;@;o;;iù;iX;o;5	;@;"svg;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@;)@;0;1;(["src;2o;
+	;o;;i
+;iX;@
+;@;@∆;[ o;S;iZ;i ;@;	o;
+	;o;;i;iZ;@
+;@;o;;i;i^;["@font-face;T;[o;,;i[;-o;
+	;o;;i;i[;@
+;@;o;;i;i[;i ;@;	o;
+	;@í	;@
+;@;o;;i&;i[;o;4;i[;	o;
+	;o;;i;i[;@
+;@;o;;i&;i[;o;5	;@;""Museo Sans W01_700";;6;70;0;1;(["font-family;2o;
+	;o;;i;i[;@
+;@;@ï	;[ o;,;i\;-o;
+	;o;;i;i\;@
+;@;o;;i	;i\;i ;@;	o;
+	;@£	;@
+;@;o;;iI;i\;o;F;i\;@;	o;
+	;o;;i
+;i\;@
+;@;o;;iI;i\;I0;J0;K[o;4	;i\;	o;
+	;o;;i;i\;@
+;@;o;;iH;i\;o;5	;@;"=../fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@;0;1;(["src;2o;
+	;o;;i
+;i\;@
+;@;@¶	;[ o;,;i];-o;
+	;o;;i;i];@
+;@;o;;i	;i];i ;@;	o;
+	;@æ	;@
+;@;o;;iû;i];o;T;i];@;	o;
+	;o;;i
+;i];@
+;@;o;;iû;i];U;V;W[
+o;T;i];@;	o;
+	;o;;i
+;i];@
+;@;o;;iW;i];U;X;W[o;F;i];@;	o;
+	;o;;i
+;i];@
+;@;o;;iI;i];I0;J0;K[o;4	;i];	o;
+	;o;;i;i];@
+;@;o;;iH;i];o;5	;@;"=../fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i];@;	o;
+	;o;;iJ;i];@
+;@;o;;iW;i];I0;J0;K[o;4	;i];	o;
+	;o;;iQ;i];@
+;@;o;;iV;i];o;5	;@;"eot;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i];@;	o;
+	;o;;iX;i];@
+;@;o;;iù;i];U;X;W[o;F;i];@;	o;
+	;o;;iX;i];@
+;@;o;;iç;i];I0;J0;K[o;4	;i];	o;
+	;o;;i\;i];@
+;@;o;;iå;i];o;5	;@;"8../fonts/e2d37f34-6bca-473c-b64d-93811f4dc046.woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i];@;	o;
+	;o;;ié;i];@
+;@;o;;iù;i];I0;J0;K[o;4	;i];	o;
+	;o;;iï;i];@
+;@;o;;iú;i];o;5	;@;"
+woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i];@;	o;
+	;o;;iû;i];@
+;@;o;;iÊ;i];U;X;W[o;F;i];@;	o;
+	;o;;iû;i];@
+;@;o;;i◊;i];I0;J0;K[o;4	;i];	o;
+	;o;;i¢;i];@
+;@;o;;i÷;i];o;5	;@;"7../fonts/eadbb595-a394-48fc-834f-8bf5da15cddf.woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i];@;	o;
+	;o;;iÿ;i];@
+;@;o;;iÊ;i];I0;J0;K[o;4	;i];	o;
+	;o;;iﬂ;i];@
+;@;o;;iÂ;i];o;5	;@;"	woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i];@;	o;
+	;o;;iÁ;i];@
+;@;o;;i2;i];U;X;W[o;F;i];@;	o;
+	;o;;iÁ;i];@
+;@;o;;i;i];I0;J0;K[o;4	;i];	o;
+	;o;;iÎ;i];@
+;@;o;;i;i];o;5	;@;"6../fonts/9bcba093-b507-4b9b-9c83-303003d3815c.ttf;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i];@;	o;
+	;o;;i ;i];@
+;@;o;;i2;i];I0;J0;K[o;4	;i];	o;
+	;o;;i';i];@
+;@;o;;i1;i];o;5	;@;"truetype;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i];@;	o;
+	;o;;i3;i];@
+;@;@≈	;U;X;W[o;F;i];@;	o;
+	;o;;i3;i];@
+;@;o;;iê;i];I0;J0;K[o;4	;i];	o;
+	;o;;i7;i];@
+;@;o;;iè;i];o;5	;@;"[../fonts/9a2af429-2624-4bd1-a676-8f0eed3e7e31.svg#9a2af429-2624-4bd1-a676-8f0eed3e7e31;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i];@;	o;
+	;o;;ië;i];@
+;@;o;;iû;i];I0;J0;K[o;4	;i];	o;
+	;o;;iò;i];@
+;@;o;;iù;i];o;5	;@;"svg;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@;)@;0;1;(["src;2o;
+	;o;;i
+;i];@
+;@;@¡	;[ o;S;i_;i ;@;	o;
+	;o;;i;i_;@
+;@;o;;i;ic;["@font-face;T;[o;,;i`;-o;
+	;o;;i;i`;@
+;@;o;;i;i`;i ;@;	o;
+	;@ç
+;@
+;@;o;;i*;i`;o;4;i`;	o;
+	;o;;i;i`;@
+;@;o;;i*;i`;o;5	;@;""MuseoSansW01-700Italic";;6;70;0;1;(["font-family;2o;
+	;o;;i;i`;@
+;@;@ê
+;[ o;,;ia;-o;
+	;o;;i;ia;@
+;@;o;;i	;ia;i ;@;	o;
+	;@û
+;@
+;@;o;;iI;ia;o;F;ia;@;	o;
+	;o;;i
+;ia;@
+;@;o;;iI;ia;I0;J0;K[o;4	;ia;	o;
+	;o;;i;ia;@
+;@;o;;iH;ia;o;5	;@;"=../fonts/8507714a-41e5-4f02-9f2d-70e6dc6b30f7.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@;0;1;(["src;2o;
+	;o;;i
+;ia;@
+;@;@°
+;[ o;,;ib;-o;
+	;o;;i;ib;@
+;@;o;;i	;ib;i ;@;	o;
+	;@π
+;@
+;@;o;;iû;ib;o;T;ib;@;	o;
+	;o;;i
+;ib;@
+;@;o;;iû;ib;U;V;W[
+o;T;ib;@;	o;
+	;o;;i
+;ib;@
+;@;o;;iW;ib;U;X;W[o;F;ib;@;	o;
+	;o;;i
+;ib;@
+;@;o;;iI;ib;I0;J0;K[o;4	;ib;	o;
+	;o;;i;ib;@
+;@;o;;iH;ib;o;5	;@;"=../fonts/8507714a-41e5-4f02-9f2d-70e6dc6b30f7.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;ib;@;	o;
+	;o;;iJ;ib;@
+;@;o;;iW;ib;I0;J0;K[o;4	;ib;	o;
+	;o;;iQ;ib;@
+;@;o;;iV;ib;o;5	;@;"eot;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;ib;@;	o;
+	;o;;iX;ib;@
+;@;o;;iù;ib;U;X;W[o;F;ib;@;	o;
+	;o;;iX;ib;@
+;@;o;;iç;ib;I0;J0;K[o;4	;ib;	o;
+	;o;;i\;ib;@
+;@;o;;iå;ib;o;5	;@;"8../fonts/0db19ee1-b74a-4eb6-b48f-60c7047ea44b.woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;ib;@;	o;
+	;o;;ié;ib;@
+;@;o;;iù;ib;I0;J0;K[o;4	;ib;	o;
+	;o;;iï;ib;@
+;@;o;;iú;ib;o;5	;@;"
+woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;ib;@;	o;
+	;o;;iû;ib;@
+;@;o;;iÊ;ib;U;X;W[o;F;ib;@;	o;
+	;o;;iû;ib;@
+;@;o;;i◊;ib;I0;J0;K[o;4	;ib;	o;
+	;o;;i¢;ib;@
+;@;o;;i÷;ib;o;5	;@;"7../fonts/9c98d320-d511-4d3d-9ba3-6516302dba95.woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;ib;@;	o;
+	;o;;iÿ;ib;@
+;@;o;;iÊ;ib;I0;J0;K[o;4	;ib;	o;
+	;o;;iﬂ;ib;@
+;@;o;;iÂ;ib;o;5	;@;"	woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;ib;@;	o;
+	;o;;iÁ;ib;@
+;@;o;;i2;ib;U;X;W[o;F;ib;@;	o;
+	;o;;iÁ;ib;@
+;@;o;;i;ib;I0;J0;K[o;4	;ib;	o;
+	;o;;iÎ;ib;@
+;@;o;;i;ib;o;5	;@;"6../fonts/b4b164e1-3b4c-42c1-8db5-ca02bfad125c.ttf;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;ib;@;	o;
+	;o;;i ;ib;@
+;@;o;;i2;ib;I0;J0;K[o;4	;ib;	o;
+	;o;;i';ib;@
+;@;o;;i1;ib;o;5	;@;"truetype;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;ib;@;	o;
+	;o;;i3;ib;@
+;@;@¿
+;U;X;W[o;F;ib;@;	o;
+	;o;;i3;ib;@
+;@;o;;iê;ib;I0;J0;K[o;4	;ib;	o;
+	;o;;i7;ib;@
+;@;o;;iè;ib;o;5	;@;"[../fonts/8673e9b2-7e5d-4749-8588-b7de69b662c2.svg#8673e9b2-7e5d-4749-8588-b7de69b662c2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;ib;@;	o;
+	;o;;ië;ib;@
+;@;o;;iû;ib;I0;J0;K[o;4	;ib;	o;
+	;o;;iò;ib;@
+;@;o;;iù;ib;o;5	;@;"svg;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@;)@;0;1;(["src;2o;
+	;o;;i
+;ib;@
+;@;@º
+;[ o;S;id;i ;@;	o;
+	;o;;i;id;@
+;@;o;;i;ih;["@font-face;T;[o;,;ie;-o;
+	;o;;i;ie;@
+;@;o;;i;ie;i ;@;	o;
+	;@à;@
+;@;o;;i&;ie;o;4;ie;	o;
+	;o;;i;ie;@
+;@;o;;i&;ie;o;5	;@;""Museo Sans W01_900";;6;70;0;1;(["font-family;2o;
+	;o;;i;ie;@
+;@;@ã;[ o;,;if;-o;
+	;o;;i;if;@
+;@;o;;i	;if;i ;@;	o;
+	;@ô;@
+;@;o;;iI;if;o;F;if;@;	o;
+	;o;;i
+;if;@
+;@;o;;iI;if;I0;J0;K[o;4	;if;	o;
+	;o;;i;if;@
+;@;o;;iH;if;o;5	;@;"=../fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@;0;1;(["src;2o;
+	;o;;i
+;if;@
+;@;@ú;[ o;,;ig;-o;
+	;o;;i;ig;@
+;@;o;;i	;ig;i ;@;	o;
+	;@¥;@
+;@;o;;iû;ig;o;T;ig;@;	o;
+	;o;;i
+;ig;@
+;@;o;;iû;ig;U;V;W[
+o;T;ig;@;	o;
+	;o;;i
+;ig;@
+;@;o;;iW;ig;U;X;W[o;F;ig;@;	o;
+	;o;;i
+;ig;@
+;@;o;;iI;ig;I0;J0;K[o;4	;ig;	o;
+	;o;;i;ig;@
+;@;o;;iH;ig;o;5	;@;"=../fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;ig;@;	o;
+	;o;;iJ;ig;@
+;@;o;;iW;ig;I0;J0;K[o;4	;ig;	o;
+	;o;;iQ;ig;@
+;@;o;;iV;ig;o;5	;@;"eot;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;ig;@;	o;
+	;o;;iX;ig;@
+;@;o;;iù;ig;U;X;W[o;F;ig;@;	o;
+	;o;;iX;ig;@
+;@;o;;iç;ig;I0;J0;K[o;4	;ig;	o;
+	;o;;i\;ig;@
+;@;o;;iå;ig;o;5	;@;"8../fonts/009ca58d-46af-4651-a359-f0ae2301085b.woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;ig;@;	o;
+	;o;;ié;ig;@
+;@;o;;iù;ig;I0;J0;K[o;4	;ig;	o;
+	;o;;iï;ig;@
+;@;o;;iú;ig;o;5	;@;"
+woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;ig;@;	o;
+	;o;;iû;ig;@
+;@;o;;iÊ;ig;U;X;W[o;F;ig;@;	o;
+	;o;;iû;ig;@
+;@;o;;i◊;ig;I0;J0;K[o;4	;ig;	o;
+	;o;;i¢;ig;@
+;@;o;;i÷;ig;o;5	;@;"7../fonts/3619b5f4-8df9-44f5-8c53-b7c236e9c74e.woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;ig;@;	o;
+	;o;;iÿ;ig;@
+;@;o;;iÊ;ig;I0;J0;K[o;4	;ig;	o;
+	;o;;iﬂ;ig;@
+;@;o;;iÂ;ig;o;5	;@;"	woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;ig;@;	o;
+	;o;;iÁ;ig;@
+;@;o;;i2;ig;U;X;W[o;F;ig;@;	o;
+	;o;;iÁ;ig;@
+;@;o;;i;ig;I0;J0;K[o;4	;ig;	o;
+	;o;;iÎ;ig;@
+;@;o;;i;ig;o;5	;@;"6../fonts/9b2d949a-4e1c-435c-8412-f377c80583ae.ttf;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;ig;@;	o;
+	;o;;i ;ig;@
+;@;o;;i2;ig;I0;J0;K[o;4	;ig;	o;
+	;o;;i';ig;@
+;@;o;;i1;ig;o;5	;@;"truetype;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;ig;@;	o;
+	;o;;i3;ig;@
+;@;@ª;U;X;W[o;F;ig;@;	o;
+	;o;;i3;ig;@
+;@;o;;iê;ig;I0;J0;K[o;4	;ig;	o;
+	;o;;i7;ig;@
+;@;o;;iè;ig;o;5	;@;"[../fonts/7a319e11-05eb-49ce-bdb7-f692766e6477.svg#7a319e11-05eb-49ce-bdb7-f692766e6477;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;ig;@;	o;
+	;o;;ië;ig;@
+;@;o;;iû;ig;I0;J0;K[o;4	;ig;	o;
+	;o;;iò;ig;@
+;@;o;;iù;ig;o;5	;@;"svg;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@;)@;0;1;(["src;2o;
+	;o;;i
+;ig;@
+;@;@∑;[ o;S;ii;i ;@;	o;
+	;o;;i;ii;@
+;@;o;;i;im;["@font-face;T;[o;,;ij;-o;
+	;o;;i;ij;@
+;@;o;;i;ij;i ;@;	o;
+	;@É;@
+;@;o;;i*;ij;o;4;ij;	o;
+	;o;;i;ij;@
+;@;o;;i*;ij;o;5	;@;""MuseoSansW01-900Italic";;6;70;0;1;(["font-family;2o;
+	;o;;i;ij;@
+;@;@Ü;[ o;,;ik;-o;
+	;o;;i;ik;@
+;@;o;;i	;ik;i ;@;	o;
+	;@î;@
+;@;o;;iI;ik;o;F;ik;@;	o;
+	;o;;i
+;ik;@
+;@;o;;iI;ik;I0;J0;K[o;4	;ik;	o;
+	;o;;i;ik;@
+;@;o;;iH;ik;o;5	;@;"=../fonts/671bc72b-b38c-4bdd-8ec8-6cb9976a3596.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@;0;1;(["src;2o;
+	;o;;i
+;ik;@
+;@;@ó;[ o;,;il;-o;
+	;o;;i;il;@
+;@;o;;i	;il;i ;@;	o;
+	;@Ø;@
+;@;o;;iû;il;o;T;il;@;	o;
+	;o;;i
+;il;@
+;@;o;;iû;il;U;V;W[
+o;T;il;@;	o;
+	;o;;i
+;il;@
+;@;o;;iW;il;U;X;W[o;F;il;@;	o;
+	;o;;i
+;il;@
+;@;o;;iI;il;I0;J0;K[o;4	;il;	o;
+	;o;;i;il;@
+;@;o;;iH;il;o;5	;@;"=../fonts/671bc72b-b38c-4bdd-8ec8-6cb9976a3596.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;il;@;	o;
+	;o;;iJ;il;@
+;@;o;;iW;il;I0;J0;K[o;4	;il;	o;
+	;o;;iQ;il;@
+;@;o;;iV;il;o;5	;@;"eot;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;il;@;	o;
+	;o;;iX;il;@
+;@;o;;iù;il;U;X;W[o;F;il;@;	o;
+	;o;;iX;il;@
+;@;o;;iç;il;I0;J0;K[o;4	;il;	o;
+	;o;;i\;il;@
+;@;o;;iå;il;o;5	;@;"8../fonts/83ec39ba-ad2e-46a6-a1b1-f93f1457f7d4.woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;il;@;	o;
+	;o;;ié;il;@
+;@;o;;iù;il;I0;J0;K[o;4	;il;	o;
+	;o;;iï;il;@
+;@;o;;iú;il;o;5	;@;"
+woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;il;@;	o;
+	;o;;iû;il;@
+;@;o;;iÊ;il;U;X;W[o;F;il;@;	o;
+	;o;;iû;il;@
+;@;o;;i◊;il;I0;J0;K[o;4	;il;	o;
+	;o;;i¢;il;@
+;@;o;;i÷;il;o;5	;@;"7../fonts/39ac4994-8f69-4ff0-8acd-9f100664da8f.woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;il;@;	o;
+	;o;;iÿ;il;@
+;@;o;;iÊ;il;I0;J0;K[o;4	;il;	o;
+	;o;;iﬂ;il;@
+;@;o;;iÂ;il;o;5	;@;"	woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;il;@;	o;
+	;o;;iÁ;il;@
+;@;o;;i2;il;U;X;W[o;F;il;@;	o;
+	;o;;iÁ;il;@
+;@;o;;i;il;I0;J0;K[o;4	;il;	o;
+	;o;;iÎ;il;@
+;@;o;;i;il;o;5	;@;"6../fonts/cffeecea-caad-4fed-835f-21cc1de30c4b.ttf;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;il;@;	o;
+	;o;;i ;il;@
+;@;o;;i2;il;I0;J0;K[o;4	;il;	o;
+	;o;;i';il;@
+;@;o;;i1;il;o;5	;@;"truetype;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;il;@;	o;
+	;o;;i3;il;@
+;@;@∂;U;X;W[o;F;il;@;	o;
+	;o;;i3;il;@
+;@;o;;iê;il;I0;J0;K[o;4	;il;	o;
+	;o;;i7;il;@
+;@;o;;iè;il;o;5	;@;"[../fonts/8413d65b-e2be-47e1-8aab-60276fde1dd3.svg#8413d65b-e2be-47e1-8aab-60276fde1dd3;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;il;@;	o;
+	;o;;ië;il;@
+;@;o;;iû;il;I0;J0;K[o;4	;il;	o;
+	;o;;iò;il;@
+;@;o;;iù;il;o;5	;@;"svg;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@;)@;0;1;(["src;2o;
+	;o;;i
+;il;@
+;@;@≤;[ o;S;in;i ;@;	o;
+	;o;;i;in;@
+;@;o;;i;ir;["@font-face;T;[o;,;io;-o;
+	;o;;i;io;@
+;@;o;;i;io;i ;@;	o;
+	;@~;@
+;@;o;;i+;io;o;4;io;	o;
+	;o;;i;io;@
+;@;o;;i+;io;o;5	;@;""TrumpMediaevalLTW01-Rom";;6;70;0;1;(["font-family;2o;
+	;o;;i;io;@
+;@;@Å;[ o;,;ip;-o;
+	;o;;i;ip;@
+;@;o;;i	;ip;i ;@;	o;
+	;@è;@
+;@;o;;iI;ip;o;F;ip;@;	o;
+	;o;;i
+;ip;@
+;@;o;;iI;ip;I0;J0;K[o;4	;ip;	o;
+	;o;;i;ip;@
+;@;o;;iH;ip;o;5	;@;"=../fonts/4ad21659-335d-4177-9907-558d662b77f0.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@;0;1;(["src;2o;
+	;o;;i
+;ip;@
+;@;@í;[ o;,;iq;-o;
+	;o;;i;iq;@
+;@;o;;i	;iq;i ;@;	o;
+	;@™;@
+;@;o;;iû;iq;o;T;iq;@;	o;
+	;o;;i
+;iq;@
+;@;o;;iû;iq;U;V;W[
+o;T;iq;@;	o;
+	;o;;i
+;iq;@
+;@;o;;iW;iq;U;X;W[o;F;iq;@;	o;
+	;o;;i
+;iq;@
+;@;o;;iI;iq;I0;J0;K[o;4	;iq;	o;
+	;o;;i;iq;@
+;@;o;;iH;iq;o;5	;@;"=../fonts/4ad21659-335d-4177-9907-558d662b77f0.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iq;@;	o;
+	;o;;iJ;iq;@
+;@;o;;iW;iq;I0;J0;K[o;4	;iq;	o;
+	;o;;iQ;iq;@
+;@;o;;iV;iq;o;5	;@;"eot;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iq;@;	o;
+	;o;;iX;iq;@
+;@;o;;iù;iq;U;X;W[o;F;iq;@;	o;
+	;o;;iX;iq;@
+;@;o;;iç;iq;I0;J0;K[o;4	;iq;	o;
+	;o;;i\;iq;@
+;@;o;;iå;iq;o;5	;@;"8../fonts/e39fa70e-3bd3-45fa-b699-b6ad272b3e2c.woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iq;@;	o;
+	;o;;ié;iq;@
+;@;o;;iù;iq;I0;J0;K[o;4	;iq;	o;
+	;o;;iï;iq;@
+;@;o;;iú;iq;o;5	;@;"
+woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iq;@;	o;
+	;o;;iû;iq;@
+;@;o;;iÊ;iq;U;X;W[o;F;iq;@;	o;
+	;o;;iû;iq;@
+;@;o;;i◊;iq;I0;J0;K[o;4	;iq;	o;
+	;o;;i¢;iq;@
+;@;o;;i÷;iq;o;5	;@;"7../fonts/e92cd6ea-07dc-459d-b84e-dcc05059bb21.woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iq;@;	o;
+	;o;;iÿ;iq;@
+;@;o;;iÊ;iq;I0;J0;K[o;4	;iq;	o;
+	;o;;iﬂ;iq;@
+;@;o;;iÂ;iq;o;5	;@;"	woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iq;@;	o;
+	;o;;iÁ;iq;@
+;@;o;;i2;iq;U;X;W[o;F;iq;@;	o;
+	;o;;iÁ;iq;@
+;@;o;;i;iq;I0;J0;K[o;4	;iq;	o;
+	;o;;iÎ;iq;@
+;@;o;;i;iq;o;5	;@;"6../fonts/94599b29-b336-4aa3-8425-5ae3d2a8f079.ttf;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iq;@;	o;
+	;o;;i ;iq;@
+;@;o;;i2;iq;I0;J0;K[o;4	;iq;	o;
+	;o;;i';iq;@
+;@;o;;i1;iq;o;5	;@;"truetype;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iq;@;	o;
+	;o;;i3;iq;@
+;@;@±;U;X;W[o;F;iq;@;	o;
+	;o;;i3;iq;@
+;@;o;;iê;iq;I0;J0;K[o;4	;iq;	o;
+	;o;;i7;iq;@
+;@;o;;iè;iq;o;5	;@;"[../fonts/e24b9514-86b3-4b5d-9a41-6ba0233b9e77.svg#e24b9514-86b3-4b5d-9a41-6ba0233b9e77;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iq;@;	o;
+	;o;;ië;iq;@
+;@;o;;iû;iq;I0;J0;K[o;4	;iq;	o;
+	;o;;iò;iq;@
+;@;o;;iù;iq;o;5	;@;"svg;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@;)@;0;1;(["src;2o;
+	;o;;i
+;iq;@
+;@;@≠;[ o;S;is;i ;@;	o;
+	;o;;i;is;@
+;@;o;;i;iw;["@font-face;T;[o;,;it;-o;
+	;o;;i;it;@
+;@;o;;i;it;i ;@;	o;
+	;@y;@
+;@;o;;i+;it;o;4;it;	o;
+	;o;;i;it;@
+;@;o;;i+;it;o;5	;@;""TrumpMediaevalLTW01-Ita";;6;70;0;1;(["font-family;2o;
+	;o;;i;it;@
+;@;@|;[ o;,;iu;-o;
+	;o;;i;iu;@
+;@;o;;i	;iu;i ;@;	o;
+	;@ä;@
+;@;o;;iI;iu;o;F;iu;@;	o;
+	;o;;i
+;iu;@
+;@;o;;iI;iu;I0;J0;K[o;4	;iu;	o;
+	;o;;i;iu;@
+;@;o;;iH;iu;o;5	;@;"=../fonts/7fa03727-61fc-49cf-b967-40ebc58b5680.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@;0;1;(["src;2o;
+	;o;;i
+;iu;@
+;@;@ç;[ o;,;iv;-o;
+	;o;;i;iv;@
+;@;o;;i	;iv;i ;@;	o;
+	;@•;@
+;@;o;;iû;iv;o;T;iv;@;	o;
+	;o;;i
+;iv;@
+;@;o;;iû;iv;U;V;W[
+o;T;iv;@;	o;
+	;o;;i
+;iv;@
+;@;o;;iW;iv;U;X;W[o;F;iv;@;	o;
+	;o;;i
+;iv;@
+;@;o;;iI;iv;I0;J0;K[o;4	;iv;	o;
+	;o;;i;iv;@
+;@;o;;iH;iv;o;5	;@;"=../fonts/7fa03727-61fc-49cf-b967-40ebc58b5680.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iv;@;	o;
+	;o;;iJ;iv;@
+;@;o;;iW;iv;I0;J0;K[o;4	;iv;	o;
+	;o;;iQ;iv;@
+;@;o;;iV;iv;o;5	;@;"eot;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iv;@;	o;
+	;o;;iX;iv;@
+;@;o;;iù;iv;U;X;W[o;F;iv;@;	o;
+	;o;;iX;iv;@
+;@;o;;iç;iv;I0;J0;K[o;4	;iv;	o;
+	;o;;i\;iv;@
+;@;o;;iå;iv;o;5	;@;"8../fonts/9ca0b54f-f9f1-44a0-8a39-934a782207aa.woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iv;@;	o;
+	;o;;ié;iv;@
+;@;o;;iù;iv;I0;J0;K[o;4	;iv;	o;
+	;o;;iï;iv;@
+;@;o;;iú;iv;o;5	;@;"
+woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iv;@;	o;
+	;o;;iû;iv;@
+;@;o;;iÊ;iv;U;X;W[o;F;iv;@;	o;
+	;o;;iû;iv;@
+;@;o;;i◊;iv;I0;J0;K[o;4	;iv;	o;
+	;o;;i¢;iv;@
+;@;o;;i÷;iv;o;5	;@;"7../fonts/bf5757fa-3a6b-4187-90ad-01ad9fdedc0b.woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iv;@;	o;
+	;o;;iÿ;iv;@
+;@;o;;iÊ;iv;I0;J0;K[o;4	;iv;	o;
+	;o;;iﬂ;iv;@
+;@;o;;iÂ;iv;o;5	;@;"	woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iv;@;	o;
+	;o;;iÁ;iv;@
+;@;o;;i2;iv;U;X;W[o;F;iv;@;	o;
+	;o;;iÁ;iv;@
+;@;o;;i;iv;I0;J0;K[o;4	;iv;	o;
+	;o;;iÎ;iv;@
+;@;o;;i;iv;o;5	;@;"6../fonts/4ff3a943-78ee-494f-950c-9b37295d87b2.ttf;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iv;@;	o;
+	;o;;i ;iv;@
+;@;o;;i2;iv;I0;J0;K[o;4	;iv;	o;
+	;o;;i';iv;@
+;@;o;;i1;iv;o;5	;@;"truetype;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;iv;@;	o;
+	;o;;i3;iv;@
+;@;@¨;U;X;W[o;F;iv;@;	o;
+	;o;;i3;iv;@
+;@;o;;iê;iv;I0;J0;K[o;4	;iv;	o;
+	;o;;i7;iv;@
+;@;o;;iè;iv;o;5	;@;"[../fonts/0180b9c0-5412-4c35-a803-a060654ed872.svg#0180b9c0-5412-4c35-a803-a060654ed872;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;iv;@;	o;
+	;o;;ië;iv;@
+;@;o;;iû;iv;I0;J0;K[o;4	;iv;	o;
+	;o;;iò;iv;@
+;@;o;;iù;iv;o;5	;@;"svg;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@;)@;0;1;(["src;2o;
+	;o;;i
+;iv;@
+;@;@®;[ o;S;ix;i ;@;	o;
+	;o;;i;ix;@
+;@;o;;i;i|;["@font-face;T;[o;,;iy;-o;
+	;o;;i;iy;@
+;@;o;;i;iy;i ;@;	o;
+	;@t;@
+;@;o;;i2;iy;o;4;iy;	o;
+	;o;;i;iy;@
+;@;o;;i2;iy;o;5	;@;"%"TrumpMediaevalLTW01-Bol_723567";;6;70;0;1;(["font-family;2o;
+	;o;;i;iy;@
+;@;@w;[ o;,;iz;-o;
+	;o;;i;iz;@
+;@;o;;i	;iz;i ;@;	o;
+	;@Ö;@
+;@;o;;iI;iz;o;F;iz;@;	o;
+	;o;;i
+;iz;@
+;@;o;;iI;iz;I0;J0;K[o;4	;iz;	o;
+	;o;;i;iz;@
+;@;o;;iH;iz;o;5	;@;"=../fonts/9b64b6a1-a151-4e53-a4cc-11c6d48be967.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@;0;1;(["src;2o;
+	;o;;i
+;iz;@
+;@;@à;[ o;,;i{;-o;
+	;o;;i;i{;@
+;@;o;;i	;i{;i ;@;	o;
+	;@†;@
+;@;o;;iû;i{;o;T;i{;@;	o;
+	;o;;i
+;i{;@
+;@;o;;iû;i{;U;V;W[
+o;T;i{;@;	o;
+	;o;;i
+;i{;@
+;@;o;;iW;i{;U;X;W[o;F;i{;@;	o;
+	;o;;i
+;i{;@
+;@;o;;iI;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;i;i{;@
+;@;o;;iH;i{;o;5	;@;"=../fonts/9b64b6a1-a151-4e53-a4cc-11c6d48be967.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i{;@;	o;
+	;o;;iJ;i{;@
+;@;o;;iW;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;iQ;i{;@
+;@;o;;iV;i{;o;5	;@;"eot;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i{;@;	o;
+	;o;;iX;i{;@
+;@;o;;iù;i{;U;X;W[o;F;i{;@;	o;
+	;o;;iX;i{;@
+;@;o;;iç;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;i\;i{;@
+;@;o;;iå;i{;o;5	;@;"8../fonts/99768f78-ef1e-4213-8c63-de7de43cb993.woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i{;@;	o;
+	;o;;ié;i{;@
+;@;o;;iù;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;iï;i{;@
+;@;o;;iú;i{;o;5	;@;"
+woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i{;@;	o;
+	;o;;iû;i{;@
+;@;o;;iÊ;i{;U;X;W[o;F;i{;@;	o;
+	;o;;iû;i{;@
+;@;o;;i◊;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;i¢;i{;@
+;@;o;;i÷;i{;o;5	;@;"7../fonts/65364393-ec62-4968-a594-86f5353709ef.woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i{;@;	o;
+	;o;;iÿ;i{;@
+;@;o;;iÊ;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;iﬂ;i{;@
+;@;o;;iÂ;i{;o;5	;@;"	woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i{;@;	o;
+	;o;;iÁ;i{;@
+;@;o;;i2;i{;U;X;W[o;F;i{;@;	o;
+	;o;;iÁ;i{;@
+;@;o;;i;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;iÎ;i{;@
+;@;o;;i;i{;o;5	;@;"6../fonts/7255ea89-2742-4c8c-9ebd-dad23ce9a25d.ttf;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i{;@;	o;
+	;o;;i ;i{;@
+;@;o;;i2;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;i';i{;@
+;@;o;;i1;i{;o;5	;@;"truetype;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i{;@;	o;
+	;o;;i3;i{;@
+;@;@ß;U;X;W[o;F;i{;@;	o;
+	;o;;i3;i{;@
+;@;o;;iê;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;i7;i{;@
+;@;o;;iè;i{;o;5	;@;"[../fonts/78a9c0b0-86f5-4457-a964-f467bdba2ec3.svg#78a9c0b0-86f5-4457-a964-f467bdba2ec3;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i{;@;	o;
+	;o;;ië;i{;@
+;@;o;;iû;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;iò;i{;@
+;@;o;;iù;i{;o;5	;@;"svg;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@;)@;0;1;(["src;2o;
+	;o;;i
+;i{;@
+;@;@£;[ o;S;i};i ;@;	o;
+	;o;;i;i};@
+;@;o;;i;i|;["@font-face;T;[o;,;i~;-o;
+	;o;;i;i~;@
+;@;o;;i;i~;i ;@;	o;
+	;@o;@
+;@;o;;i2;i~;o;4;i~;	o;
+	;o;;i;i~;@
+;@;o;;i2;i~;o;5	;@;"%"TrumpMediaevalLTW01-Bol_723570";;6;70;0;1;(["font-family;2o;
+	;o;;i;i~;@
+;@;@r;[ o;,;i;-o;
+	;o;;i;i;@
+;@;o;;i	;i;i ;@;	o;
+	;@Ä;@
+;@;o;;iI;i;o;F;i;@;	o;
+	;o;;i
+;i;@
+;@;o;;iI;i;I0;J0;K[o;4	;i;	o;
+	;o;;i;i;@
+;@;o;;iH;i;o;5	;@;"=../fonts/5647549b-6879-465b-a137-0419ad366196.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@;0;1;(["src;2o;
+	;o;;i
+;i;@
+;@;@É;[ o;,;i{;-o;
+	;o;;i;i{;@
+;@;o;;i	;i{;i ;@;	o;
+	;@õ;@
+;@;o;;iû;i{;o;T;i{;@;	o;
+	;o;;i
+;i{;@
+;@;o;;iû;i{;U;V;W[
+o;T;i{;@;	o;
+	;o;;i
+;i{;@
+;@;o;;iW;i{;U;X;W[o;F;i{;@;	o;
+	;o;;i
+;i{;@
+;@;o;;iI;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;i;i{;@
+;@;o;;iH;i{;o;5	;@;"=../fonts/5647549b-6879-465b-a137-0419ad366196.eot?#iefix;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i{;@;	o;
+	;o;;iJ;i{;@
+;@;o;;iW;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;iQ;i{;@
+;@;o;;iV;i{;o;5	;@;"eot;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i{;@;	o;
+	;o;;iX;i{;@
+;@;o;;iù;i{;U;X;W[o;F;i{;@;	o;
+	;o;;iX;i{;@
+;@;o;;iç;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;i\;i{;@
+;@;o;;iå;i{;o;5	;@;"8../fonts/32b3223d-60df-4541-9ec1-f2df4753d75d.woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i{;@;	o;
+	;o;;ié;i{;@
+;@;o;;iù;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;iï;i{;@
+;@;o;;iú;i{;o;5	;@;"
+woff2;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i{;@;	o;
+	;o;;iû;i{;@
+;@;o;;iÊ;i{;U;X;W[o;F;i{;@;	o;
+	;o;;iû;i{;@
+;@;o;;i◊;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;i¢;i{;@
+;@;o;;i÷;i{;o;5	;@;"7../fonts/f2e85198-c587-4ba1-94ed-8876de1f74ed.woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i{;@;	o;
+	;o;;iÿ;i{;@
+;@;o;;iÊ;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;iﬂ;i{;@
+;@;o;;iÂ;i{;o;5	;@;"	woff;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i{;@;	o;
+	;o;;iÁ;i{;@
+;@;o;;i2;i{;U;X;W[o;F;i{;@;	o;
+	;o;;iÁ;i{;@
+;@;o;;i;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;iÎ;i{;@
+;@;o;;i;i{;o;5	;@;"6../fonts/725eb361-8055-4608-a49c-7cf6e88dfb39.ttf;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i{;@;	o;
+	;o;;i ;i{;@
+;@;o;;i2;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;i';i{;@
+;@;o;;i1;i{;o;5	;@;"truetype;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@o;T;i{;@;	o;
+	;o;;i3;i{;@
+;@;@¢;U;X;W[o;F;i{;@;	o;
+	;o;;i3;i{;@
+;@;o;;iê;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;i7;i{;@
+;@;o;;iè;i{;o;5	;@;"[../fonts/8880a5f5-0fa1-4a01-be77-9d68b6682fec.svg#8880a5f5-0fa1-4a01-be77-9d68b6682fec;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("url;)@o;F;i{;@;	o;
+	;o;;ië;i{;@
+;@;o;;iû;i{;I0;J0;K[o;4	;i{;	o;
+	;o;;iò;i{;@
+;@;o;;iù;i{;o;5	;@;"svg;;L;70;)@;Mo;N;OIC;P{ ;Q[ ;R{ ;("format;)@;)@;)@;0;1;(["src;2o;
+	;o;;i
+;i{;@
+;@;@û;[ 

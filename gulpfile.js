@@ -21,11 +21,14 @@ var gulp = require('gulp'),
 
 // Styles
 gulp.task('styles', function() {
-  return sass('src/styles/main.scss', { style: 'expanded' })
+  return sass('src/styles/**/*.scss', { style: 'expanded' })
     .pipe(autoprefixer('last 2 version'))
+    .pipe(concat('style.css'))
     .pipe(gulp.dest('dist/styles'))
+    .pipe(concat('style.css'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
+
     .pipe(gulp.dest('dist/styles'))
     .pipe(notify({ message: 'Styles task complete' }));
 });
@@ -35,7 +38,7 @@ gulp.task('scripts', function() {
   return gulp.src('src/scripts/**/*.js')
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
-    .pipe(concat('main.js'))
+    .pipe(concat('app.js'))
     .pipe(gulp.dest('dist/scripts'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())

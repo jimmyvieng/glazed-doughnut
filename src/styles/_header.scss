@@ -1,0 +1,82 @@
+header {
+	width: 100%;
+	clear: both;
+	position: relative;
+	z-index: 997;
+	top: 0;
+	background: #fff;
+	.logo {
+		width: 17em;
+		/*margin-left: 39%; 
+		margin-right: auto;use if header contact bar*/
+		position: relative;
+		z-index: 999;
+		padding: 1em 1.875em;
+		/*margin-top: 2em; use if header contact bar*/
+		img {
+			height: 7em;
+		}
+	}
+}
+.header-contact {
+	text-align: right;
+	padding: 1em 1.875em;
+	position: absolute;
+	top: 1em;
+	right: 0;
+	a {
+		color: $primary-color;
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+	p {
+		margin: 0;
+	}
+}
+.header-phone {
+	font-family: 'TrumpMediaevalLTW01-Bol_723567';
+	font-size: 1.5em;
+}
+
+
+@media (max-width: $break-large) {
+    header {
+        top: 0;
+        border-bottom: solid 2px $dark-purple;
+        .logo {
+			float: none;
+            margin-top: 0;
+			margin-right: auto;
+			margin-left: auto;
+            text-align: center;
+            img {
+                height: 5em;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-medium) {
+	.header-phone {
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width: $break-small) {
+    header {
+        .logo {
+			text-align: right;
+            float: right;
+        }
+    }
+	.header-contact {
+		text-align: center;
+		clear: both;
+		padding-top: 0;
+		position: relative;
+		top: auto;
+		right: auto;
+	}
+}

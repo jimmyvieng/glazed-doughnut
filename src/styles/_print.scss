@@ -1,0 +1,94 @@
+/* ==========================================================================
+    Print styles
+========================================================================== */
+
+@media print {
+    /* Defaults */
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+    a {
+        &:visited {
+            text-decoration: none;
+        }
+    }
+    pre, blockquote {
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr, img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2, h3 {
+        page-break-after: avoid;
+    }
+    
+    
+    .main, #main-nav, .site-nav, .menu-trigger, .banner, .reviews-container, div.grid_12.payments, div.grid_12.footer-logo-div, .social, .promo-buttons, section > .reviews-container, section.module.parallax, button, .button, input {
+        display: none;    
+    }
+    
+    .grid_8, .push_2, .grid_10, .grid_4, .grid_9, .push_3, .grid_3 {
+        width: 100% !important;
+        margin: 15px 0 !important;
+        padding: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+    }
+    
+    img {
+        max-width: 300px!important;
+        
+    }
+    
+    section.module {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &.parallax.top {
+            display: block;
+            height: auto !important;
+            width: 100%;
+            margin-top: 20px;
+            overflow: auto;
+            .page-top-container {
+                width: 92%!important;
+                height: auto !important;
+                overflow: auto!important;
+                position: relative !important;
+                padding: 0 !important;
+                margin: 0 4% !important;
+            }
+        }
+    }
+
+    .no-print,
+    .img-left-content,
+    .img-right-content,
+    .left-img,
+    .right-img{
+        display: none;
+    }
+
+    .module,
+    .container{
+        border: 1px solid transparent; 
+        position: relative;
+        width: 100%;
+        clear: both;
+        overflow: visible !important;
+        position: relative !important; 
+    }
+    
+}
