@@ -1,83 +1,41 @@
-/**
- * AngularJS Tutorial 1
- * @author Nick Kaye <nick.c.kaye@gmail.com>
- */
 
-/**
- * Main AngularJS Web Application
- */
-var app = angular.module('tutorialWebApp', [
-  'ngRoute'
-]);
+//                        __
+//  _   _____  ____  ____/ /___  __________
+// | | / / _ \/ __ \/ __  / __ \/ ___/ ___/
+// | |/ /  __/ / / / /_/ / /_/ / /  (__  )
+// |___/\___/_/ /_/\__,_/\____/_/  /____/
+// add your vendors below
 
-/**
- * Configure the Routes
- */
-app.config(['$routeProvider', function($routeProvider) {
-  $routeProvider
-  // Home
-    .when("/", {
-      templateUrl: "partials/home.html",
-      controller: "PageCtrl"
-    })
-    // Pages
-    .when("/about", {
-      templateUrl: "partials/about.html",
-      controller: "PageCtrl"
-    })
-    .when("/faq", {
-      templateUrl: "partials/faq.html",
-      controller: "PageCtrl"
-    })
-    .when("/pricing", {
-      templateUrl: "partials/pricing.html",
-      controller: "PageCtrl"
-    })
-    .when("/services", {
-      templateUrl: "partials/services.html",
-      controller: "PageCtrl"
-    })
-    .when("/contact", {
-      templateUrl: "partials/contact.html",
-      controller: "PageCtrl"
-    })
-    // Blog
-    .when("/blog", {
-      templateUrl: "partials/blog.html",
-      controller: "BlogCtrl"
-    })
-    .when("/blog/post", {
-      templateUrl: "partials/blog_item.html",
-      controller: "BlogCtrl"
-    })
-    // else 404
-    .otherwise("/404", {
-      templateUrl: "partials/404.html",
-      controller: "PageCtrl"
-    });
-    
-}]);
 
-/**
- * Controls the Blog
- */
-app.controller('BlogCtrl', function( /* $scope, $location, $http */ ) {
-  console.log("Blog Controller reporting for duty.");
+
+//                     __             ____
+//   _________  ____  / /__________  / / /__  __________
+//  / ___/ __ \/ __ \/ __/ ___/ __ \/ / / _ \/ ___/ ___/
+// / /__/ /_/ / / / / /_/ /  / /_/ / / /  __/ /  (__  )
+// \___/\____/_/ /_/\__/_/   \____/_/_/\___/_/  /____/
+// AngularJS version: 1
+// author: Jimmy T.
+// date: 
+// application name:
+// version:
+ angular.module('myApp',[])
+.controller('mainCtrl', function($scope){
+  $scope.helloWorld = function(){
+    alert.log('hello world');
+  };
+
 });
 
-/**
- * Controls all other Pages
- */
-app.controller('PageCtrl', function( /* $scope, $location, $http */ ) {
-  console.log("Page Controller reporting for duty.");
+//        ___                __  _
+//   ____/ (_)_______  _____/ /_(_)   _____  _____
+//  / __  / / ___/ _ \/ ___/ __/ / | / / _ \/ ___/
+// / /_/ / / /  /  __/ /__/ /_/ /| |/ /  __(__  )
+// \__,_/_/_/   \___/\___/\__/_/ |___/\___/____/
+// AngularJS version: 1
+// author: Jimmy T.
+// date: 
+// application name:
+// version:
+ 
 
-  // Activates the Carousel
-  $('.carousel').carousel({
-    interval: 5000
-  });
-
-  // Activates Tooltips for Social Links
-  $('.tooltip-social').tooltip({
-    selector: "a[data-toggle=tooltip]"
-  })
-});
+var filter = "filter";

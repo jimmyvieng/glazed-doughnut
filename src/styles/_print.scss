@@ -33,8 +33,7 @@
     }
     h2, h3 {
         page-break-after: avoid;
-    }
-    
+    }    
     
     .main, #main-nav, .site-nav, .menu-trigger, .banner, .reviews-container, div.grid_12.payments, div.grid_12.footer-logo-div, .social, .promo-buttons, section > .reviews-container, section.module.parallax, button, .button, input {
         display: none;    
@@ -51,27 +50,7 @@
     img {
         max-width: 300px!important;
         
-    }
-    
-    section.module {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        &.parallax.top {
-            display: block;
-            height: auto !important;
-            width: 100%;
-            margin-top: 20px;
-            overflow: auto;
-            .page-top-container {
-                width: 92%!important;
-                height: auto !important;
-                overflow: auto!important;
-                position: relative !important;
-                padding: 0 !important;
-                margin: 0 4% !important;
-            }
-        }
-    }
+    }    
 
     .no-print,
     .img-left-content,

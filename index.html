@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,9 +25,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Bootstrap -->
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-    <link href="css/default.css" rel="stylesheet">
+    <link href="dist/styles/styles.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -37,18 +35,35 @@
   </head>
   <body>
     
+<div ng-include="'inc/header.html'"></div>
 
+<div ng-include="'inc/main-content.html'"></div>
+
+<div ng-include="'inc/footer.html'"></div>
     
+    <div ng-controller="main-ctrl"></div>
+
+
+<section>
+  <ul>
+    <li ng-repeat="contestant in ctrl.contestants">
+      {{contestant.firstName}} {{contestant.lastName}}
+    </li>
+  </ul>
+  <c-contestant-editor-form contestants="ctrl.contestants">
+  </c-contestant-editor-form>
+</section>
     
 <!-- Vendor: Javascripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 <!-- Vendor: Angular, followed by our custom Javascripts -->
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
 
 <!-- Our Website Javascripts -->
-<script src="js/main.js"></script> 
+<script src="dist/scripts/app.js"></script> 
   </body>
 </html>

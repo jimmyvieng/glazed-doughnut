@@ -1,79 +1,7 @@
 /* ====================================================================================================================
     Accordion
 ==================================================================================================================== */
-/* ====================================================================================================================
-    Accordion
-==================================================================================================================== */
 
-.accord {
-    div {
-        background:$light-gray;
-        -moz-border-radius:0 0 5px 5px;
-        -webkit-border-radius:0 0 5px 5px;
-        border-radius:0 0 5px 5px;
-        border-bottom:.1em solid #999;
-		border:1px solid #104360;
-        border-top:none;
-        padding:10px;
-        margin-top:-.01em;
-        display: none;
-    }
-	 h4  {
-        width:100%;
-        padding:10px;
-        background-color:rgba(20, 122, 82, 0.8);
-        color:white;
-        &:hover {
-            background-color:#147a52;
-        }
-    }
-    .accord-title {
-        color: $secondary-color;
-        cursor: pointer;
-        display: block;
-        text-align: left;
-        margin-bottom: 0;
-        background: rgba(103,176,66,0.15);
-        overflow: auto;
-        border: 2px solid $secondary-color;
-        padding:.5em;
-        -moz-border-radius:5px;
-        -webkit-border-radius:5px 5px 5px 5px;
-        border-radius:5px 5px 5px 5px;
-        transition: all .5s;
-        &.emergency {
-            color: $emergency-red;
-            border: 2px solid $emergency-red;
-            &:hover, &.active {
-                background: $emergency-red;
-                color: #fff;
-                border: 2px solid $emergency-red;
-                transition: all .5s;
-            }
-        }
-        &:after {
-            content: "\002B";
-            float: right;
-        }
-        &:hover {
-            background: rgba(103,176,66,1);
-            border: 2px solid $secondary-color;
-            color:#fff;
-            transition: all .5s;
-        }
-        &.active {
-            background: $secondary-color;
-            color: #fff;
-            -moz-border-radius: 5px 5px 0 0;
-            -webkit-border-radius: 5px 5px 0 0;
-            border-radius: 5px 5px 0 0;
-            border: 2px solid $secondary-color;
-        }
-        &.active:after { 
-            content: "\2012";
-        }
-    }
-}
 
 /* ====================================================================================================================
     Image scale mixin
@@ -165,15 +93,7 @@
         display: none;
     }
 }
-/* makes current #'d anchor visible under a sticky nav without breaking the accordions in the process. Modify to match your build. If you do not have a sticky nav, you may still want to use this for aesthetic's sake. If you have a sticky nav that occurs at a different break, then move this to that break (does nothing in ie9) */
-:target:not(.accord-title) {
-    @media only screen and (min-width: $break-large + 1) {
-        padding-top: 11rem;
-        margin-top: -8rem;
-        vertical-align: top;
-        display: block;
-    }
-}
+
 /* Remove filters in IE9+ */
 .ie * {
     -webkit-filter: none;
