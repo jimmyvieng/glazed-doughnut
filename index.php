@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>villamor</title>
+    <title></title>
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -36,11 +36,19 @@
     <![endif]-->
   </head>
   <body>
-    <h1 class="logo">villamor</h1>
-    <p>s(w)oon.</p>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed --> 
-    <!-- <script src="js/bootstrap.min.js"></script> -->     
+    
+
+    
+    
+<!-- Vendor: Javascripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<!-- Vendor: Angular, followed by our custom Javascripts -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+
+<!-- Our Website Javascripts -->
+<script src="js/main.js"></script> 
   </body>
 </html>
