@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title></title>
+    <title>jimmy vieng - freelance front end developer</title>
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -22,10 +22,8 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Bootstrap -->
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="dist/styles/styles.css" rel="stylesheet">
+    <meta name="theme-color" content="#ffffff">    
+    <link href="dist/styles/styles.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,25 +32,20 @@
     <![endif]-->
   </head>
   <body>
-    
+  
+
+
 <div ng-include="'inc/header.html'"></div>
 
 <div ng-include="'inc/main-content.html'"></div>
 
 <div ng-include="'inc/footer.html'"></div>
     
-    <div ng-controller="main-ctrl"></div>
 
 
-<section>
-  <ul>
-    <li ng-repeat="contestant in ctrl.contestants">
-      {{contestant.firstName}} {{contestant.lastName}}
-    </li>
-  </ul>
-  <c-contestant-editor-form contestants="ctrl.contestants">
-  </c-contestant-editor-form>
-</section>
+
+
+
     
 <!-- Vendor: Javascripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -64,6 +57,6 @@
 
 
 <!-- Our Website Javascripts -->
-<script src="dist/scripts/app.js"></script> 
+<script src="dist/scripts/app.min.js"></script> 
   </body>
 </html>

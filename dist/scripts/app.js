@@ -21,7 +21,7 @@
  angular.module('myApp',[])
 .controller('mainCtrl', function($scope){
   $scope.helloWorld = function(){
-    alert.log('hello world');
+    console.log('hello world');
   };
 
 });

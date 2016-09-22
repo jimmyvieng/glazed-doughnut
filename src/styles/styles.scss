@@ -20,19 +20,22 @@ $break-xlarge: 1400px;
 ==================================================================================================================== */
 
 // Import Normalize & Grid Generator
+@import "bootstrap";
 @import "normalize";
-// @import "grid-generator"	;
+@import "animation";
+@import "animate";
+// @import "grid-generator";
 // Generate Grid
 // @include gridGenerator();
 // Import Style Sheets
-// @import "typography";
+@import "typography";
 // @import "helper";
 // @import "header";
 // @import "nav";
-// @import "content";
+@import "content";
 // @import "sidebar";
 // @import "footer";
 // @import "print";
-// @import "blog"; 
+// @import "blog";
 
 
